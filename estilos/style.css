@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/*PALETA DE CORES
+#FFD301
+#cfad01
+#F32E5C
+*/
+
+
+/*============================================VARIAVEIS============================================*/
+
+:root{
+    --cor1: #FFD301;
+    --cor2: #cfad01;
+    --cor3: #F32E5C;
+}
+
+/*=============================================GERAIS===============================================*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*=============================================HEADER===============================================*/
+
+header{
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2));
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.397);
+}
+
+header > h1{
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.7em;
+    padding: 20px 5px;
+    font-variant: small-caps;
+    text-shadow: 0px 0px 4px black;
+}
+
+/*==============================================ICONE===============================================*/
+
+i#list{
+    display: block;
+    font-size: 2.5em;
+    text-align: center;
+    border: 1.5px solid var(--cor2);
+    background-color: #f5e9ad;
+    cursor: pointer;
+}
+
+i#list:hover{
+    box-shadow: 0px 0px 10px white;
+    border: 1.5px solid var(--cor2)
+}
+
+/*==============================================MENU===============================================*/
+
+menu{
+    text-align: center;
+    display: none;
+    background-color: white;
+}
+
+
+menu > ul > li > a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px;
+    border: 1px solid gray;
+    font-variant: small-caps;
+}
+
+menu > ul > li > a:hover{
+    background-color: var(--cor3);
+    color: white;
+}
+
+/*==============================================BODY===============================================*/
+
+main{
+    margin: auto;
+    max-width: 400px;
+    min-width: 300px;
+    height: 100vh;
+}
+
+main > img{
+  width: 100%;
+  box-shadow: 0px 0px 4px var(--cor3);
+}
+
+main > section.texto{
+    margin: auto;
+    width: 90%;
+    margin-top: 10px;
+    padding: 20px 5px;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+section.texto > h1{
+    text-align: center;
+    margin: 10px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section.texto > p{
+    text-align: justify;
+    padding: 5px 15px;
+    text-indent: 10px;
+}
+
+section.texto > ul{
+    padding: 5px 15px;
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+section.texto > h2{
+    text-align: center;
+    font-size: 1.1em;
+    margin: 6px;
+}
+
+section.texto > img{
+    display: block;
+    margin: auto;
+    width: 250px;
+    padding: 5px;
+
+}
+
+
