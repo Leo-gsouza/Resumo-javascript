@@ -89,6 +89,33 @@ menu > ul > li > a:hover{
 
 /*==============================================BODY===============================================*/
 
+h1{
+    text-align: center;
+    font-family: monospace;
+    font-size: 2.5em;
+    padding: 18px;
+    font-variant: small-caps;
+}
+
+p.menu{
+    width: 100px;
+    margin: auto;
+    margin-top: 15px;
+
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system;
+    
+    background-color: #f5e9ad;
+    color: var(--cor3);
+    padding: 10px 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.336);
+    border: 2px solid var(--cor1);
+}
+
 main{
     margin: auto;
     max-width: 400px;
@@ -126,6 +153,12 @@ section.texto > p{
     text-indent: 10px;
 }
 
+section.texto > p > img{
+    width: 15px;
+    padding-right: 5px;
+    display: inline-block;
+}
+
 section.texto > ul{
     padding: 5px 15px;
     font-variant: small-caps;
@@ -146,5 +179,7 @@ section.texto > img{
     border: 5px ridge var(--cor1);/*Bordas > groove, solid, dotted, dashed, double, ridge, inset */
     background-color: var(--cor3);
 }
+
+
 
 
