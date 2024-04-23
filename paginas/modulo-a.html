@@ -23,10 +23,11 @@
             <li><a href="#">Módulo F</a></li>
         </ul>
     </menu>
-    <h1>Módulo A</h1>
-    <p class="menu" onclick="visivel1()">Aula 01</p>
+    
+    <!----------------------------------------------AULA01--------------------------------------------->
 
-<!--------------------------------------------------AULA01--------------------------------------------->
+    <h1>Módulo A</h1>
+    <p class="botao" onclick="visivel1()">Aula 01</p>
     <section class="texto" id="aula01">
         <h2>Conceito: Cliente x Servidor</h2>
         <img src="../jpeg/cliente x servidor 1.JPG" alt="HTML-CSS-JS">
@@ -62,7 +63,7 @@
     </section>
 
 <!--------------------------------------------------AULA02--------------------------------------------->
-    <p class="menu" onclick="visivel2()">Aula 02</p>
+    <p class="botao" onclick="visivel2()">Aula 02</p>
     <section class="texto" id="aula02" >
         <h2>A evolução do JavaScript</h2>
         <p> Em meados de <strong>1960</strong> <strong>D. Eisenhower(EUA)</strong> desenvolveu uma agencia de tecnologia » <strong>DARPA</strong> </p>
@@ -76,17 +77,43 @@
         <p><strong>ECMAscript versões »</strong> 1.0 - 1997, 2.0 - 1998, 3.0 - 1999, ES5 - 2009, ES6 - 2015, ES - 2016, ES - 2017, ES - 2018</p>
         <h2>Tecnoligias que usam o javascript:</h2> 
         <p>
-            <br><img src="../jpeg/jquery.jpg" alt="Jguery">jQuery(mozzila)
-            <br><img src="../jpeg/angular.jpg" alt="Angular">Angular(google)
-            <br><img src="../jpeg/reacht.jpg" alt="Reacht">Reacht(facebook)
-            <br><img src="../jpeg/vue.jpg" alt="Vue">Vue(ex programar do google)
-            <br><img src="../jpeg/electron.jpg" alt="Electron">Electron(Github)
-            <br><img src="../jpeg/ionic.jpg" alt="Ionic">Ionic
-            <br><img src="../jpeg/cordova.jpg" alt="Cordova">Cordova
+            <br><img src="../jpeg/jquery.jpg" alt="Jguery" class="pequena">jQuery(mozzila)
+            <br><img src="../jpeg/angular.jpg" alt="Angular" class="pequena">Angular(google)
+            <br><img src="../jpeg/reacht.jpg" alt="Reacht" class="pequena">Reacht(facebook)
+            <br><img src="../jpeg/vue.jpg" alt="Vue" class="pequena">Vue(ex programar do google)
+            <br><img src="../jpeg/electron.jpg" alt="Electron" class="pequena">Electron(Github)
+            <br><img src="../jpeg/ionic.jpg" alt="Ionic" class="pequena">Ionic
+            <br><img src="../jpeg/cordova.jpg" alt="Cordova" class="pequena">Cordova
             <br>observação: antes de estudar essas tecnologias aprenda javascript.
         </p>
         <p>Existem muitos jogos criados em javascript</p>
+        <h2>Questionario</h2>
+        <p>Qual empresa criou o javascript?</p>
+        <p>Java e Javascript possuem alguma relação?</p>
+        <p>O que ECMAScript tem a ver com JavaScript?</p>
+        <p>Sabia que o< programa Whatsapp desktop é criado em JavaScript?</p>
+    </section>
 
+<!--------------------------------------------------AULA03--------------------------------------------->
+
+    <p class="botao" onclick="visivel3()">Aula 03</p>
+    <section class="texto" id="aula03">
+        <h2>Dicas para o estudo correto!</h2>
+        <ul type="none">
+            <li>Assistir o vídeo</li>
+            <li>Treinar no computador</li>
+            <li>Ler manuais e referencias</li>
+            <li>Anotar tudo </li>
+            <li>Interagir com pessoas</li>
+            <li>Elaborar seus proprios projetos</li>
+        </ul>
+        <h2>Bibliografia</h2>
+        <ul type="none">
+            <li><img src="../jpeg/livro-js-guia-definitivo.jpg" alt="Livro guia definitivo" class="pequena">JavaScript o guia definitivo - David flanagan </li>
+            <li><img src="../jpeg/livro-js-guia-do-programador.jpg" alt="livro guia do programador" class="pequena">JavaScript guia do programador - Mauricio Samy Silva</li>
+            <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank">Mozilla - guia de referencia</a></li>
+            <li><a href="https://ecma-international.org/publications-and-standards/standards/ecma-262/">ECMA - guia de referencia</a></li>
+        </ul>
     </section>
 
 
@@ -95,9 +122,13 @@
 
 
 
-
-
-<!--------------------------------------------------AULA03--------------------------------------------->
+<!--------------------------------------------------AULA04--------------------------------------------->
+<!--------------------------------------------------AULA05--------------------------------------------->
+<!--------------------------------------------------AULA06--------------------------------------------->
+<!--------------------------------------------------AULA07--------------------------------------------->
+<!--------------------------------------------------AULA08--------------------------------------------->
+<!--------------------------------------------------AULA09--------------------------------------------->
+<!--------------------------------------------------AULA010--------------------------------------------->
 
 
     <script>
@@ -117,6 +148,12 @@
             if (aula02.style.display == 'block'){
                 aula02.style.display ='none'}
             else{aula02.style.display ='block'}
+        }
+
+        function visivel3(){
+            if (aula03.style.display == 'block'){
+                aula03.style.display ='none'}
+            else{aula03.style.display ='block'}
         }
     </script>
 </body>

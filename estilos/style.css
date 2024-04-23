@@ -24,6 +24,7 @@
 html, body{
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 body{
@@ -97,7 +98,7 @@ h1{
     font-variant: small-caps;
 }
 
-p.menu{
+p.botao{
     width: 100px;
     margin: auto;
     margin-top: 15px;
@@ -153,13 +154,13 @@ section.texto > p{
     text-indent: 10px;
 }
 
-section.texto > p > img{
+section.texto  img.pequena{
     width: 15px;
     padding-right: 5px;
     display: inline-block;
 }
 
-section.texto > ul{
+section.texto  ul{
     padding: 5px 15px;
     font-variant: small-caps;
     font-style: italic;
@@ -179,6 +180,8 @@ section.texto > img{
     border: 5px ridge var(--cor1);/*Bordas > groove, solid, dotted, dashed, double, ridge, inset */
     background-color: var(--cor3);
 }
+
+section.texto >
 
 
 
