@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><!--Cabeça da página-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/media-quieres.css">
+    <title>Aula04</title>
+    <style>
+        body{
+            background-color: darkslategrey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p class="botao"><a href="../modulos/modulo-b.html">Voltar</a></p>
+    <section class="texto">
+        <h1>Arquivo 002</h1>
+        <p>Trabalhando com o dado inserido em <strong>window.prompt</strong></p>
+        <p>O valor inserido em window.prompt é armazenado em uma variavel usando:</p>
+        <p class="comando">var nome = window.prompt ('Qual o seu nome?') </p>
+        <p>Isto significa que a variavel nome vai receber os dados inseridos pelo usuario na janela do prompt.</p>
+        <p>Logo em seguida foi criado um comando de alert e inserido o valor da variavel, criando um a interação</p>
+        <p class="comando">window.alert('Prazer em conhece-lo(a)' + nome)</p>
+        <p>Note que é necessario colocar o texto entre <strong>aspas</strong> e a variavel fora das aspas seguida de um sinal de + que tem como função <strong>concatenar</strong> o texto e a variavel.</p>
+
+    </section>
+
+<!---------------------------------------------CRIAR SCRIPT-------------------------------------------->
+<script>
+    var nome = window.prompt('Qual é seu nome')
+    window.alert('Prazer em conhece-lo(a) ' + nome +'!')
+</script>
+
+</body>
+</html>

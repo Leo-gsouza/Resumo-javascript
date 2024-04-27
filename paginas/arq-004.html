@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/media-quieres.css">
+    <title>Arquivo 04</title>
+    <style>
+        body{
+            background-color: darkslategrey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p class="botao"><a href="../modulos/modulo-b.html">Voltar</a></p>
+    <section class="texto">
+        <h2>Formatando Strings</h2>
+        <p>s.lenght » Informar quantos caracteres tem a string</p>
+        <p>s.toUpperCase » Tudo em maiuscula</p>
+        <p>s.toLowerCase » Tudo em minuscula</p>
+    </section>
+    <script>
+        var nome = window.prompt('Qual o seu nome: ')
+        document.write(`Seu nome tem ${nome.length} letras <br/>` )
+        document.write(`Seu nome em maiusculo é ${nome.toUpperCase()} <br/>`)
+        document.write(`Seu nome em minusculo é ${nome.toLowerCase()}`)
+    </script>
+</body>
+</html>

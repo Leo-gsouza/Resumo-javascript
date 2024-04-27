@@ -72,6 +72,16 @@ menu{
     background-color: white;
 }
 
+menu > ul > li.ativo{
+    background-color: var(--cor1);
+    box-shadow:  0px 0px 20px white;
+}
+
+li.ativo > a{
+    color: var(--cor3);
+    font: normal bold 1em;
+}
+
 
 menu > ul > li > a{
     display: block;
@@ -154,7 +164,7 @@ section.texto > p{
     text-indent: 10px;
 }
 
-section.texto  img.pequena{
+section.texto > p > img.pequena{
     width: 15px;
     padding-right: 5px;
     display: inline-block;
@@ -181,8 +191,8 @@ section.texto > img{
     background-color: var(--cor3);
 }
 
-section.texto >
+/*==============================================ARQUIVOS==========================================*/
 
-
-
-
+section.texto > p.comando{
+    color: yellow;
+}
