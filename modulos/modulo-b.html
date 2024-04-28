@@ -70,7 +70,7 @@
     <!---------------------------------------------AULA06---------------------------------------------->
 
     <p class="botao" onclick="visivel6()">Aula06</p>
-    <section class="texto">
+    <section class="texto" id="aula06">
         <h2>window.prompt</h2>
         <p>Será criado interação com a informação digitada na caixa do window.prompt</p>
         <p>Acessar o <a href="../paginas/arq-002.html">Arquivo 002</a></p>
@@ -95,6 +95,31 @@
             <li><strong>Formatação em moeda » n1.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})</strong></li>
         </ul>
     </section>
+
+    
+    <!---------------------------------------Aula 07----------------------------------------------->
+    <p class="botao">Aula 07</p>
+    <section class="texto">
+        <h2>Operadores aritimeticos</h2>
+        <img src="../jpeg/modulo-b-2.JPG" alt="Aritimético">
+        <p>Respeita a ordem de precedência</p>
+        <ul type="none">
+            <li>1º Parenteses <strong>()</strong> </li>
+            <li>2º Exponenciação <strong>**</strong></li>
+            <li>3º Multiplicação <strong>*</strong> ou Divisão <strong>/</strong> da esquerda para direita</li>
+            <li>4º Soma <strong>+</strong> e subtração <strong>-</strong> da esquerda para direita</li>
+        </ul>
+        <h2>Auto atribuição</h2>
+        <p>Utilizar a variavél em outra soma alterando seu valor, exemplo:  <br>N = 5 <br>N += 3 (5 + 3 = 8) <br>N -= 6 (8 - 6 = 2) <br>N *= 5 (2 * 5 = 10) </p>
+        <img src="../jpeg/modulo-b-3.JPG" alt="Auto-atribuição">
+        <h2>Operador de incremento</h2>
+        <p>Utilizar ++ ou -- para variavel receber +1 ou -1. exxemplo</p>
+        <p>X = 1 (1)<br> X+= 1 (2) <br> X++ (3) <br> X-- (2)</p>
+        <p>Existe o pós e pré incremento. Em um o sinal vem depois da variavel (X++) e no vem antes (++X) </p>
+    </section>
+
+
+
     <!--------------------------------------------------Script------------------------------------>
     <script>
         function clickMenu(){
@@ -107,6 +132,12 @@
             if (aula05.style.display == 'block'){
                 aula05.style.display = 'none'}
             else{aula05.style.display = 'block'}
+        }
+
+        function visivel6(){
+            if (aula06.style.display == 'block'){
+                aula06.style.display = 'none'}
+            else{aula06.style.display = 'block'}
         }
     </script>
 </body>
