@@ -98,8 +98,8 @@
 
     
     <!---------------------------------------Aula 07----------------------------------------------->
-    <p class="botao">Aula 07</p>
-    <section class="texto">
+    <p class="botao" onclick="visivel7()">Aula 07</p>
+    <section class="texto" id="aula07">
         <h2>Operadores aritimeticos</h2>
         <img src="../jpeg/modulo-b-2.JPG" alt="Aritimético">
         <p>Respeita a ordem de precedência</p>
@@ -117,8 +117,40 @@
         <p>X = 1 (1)<br> X+= 1 (2) <br> X++ (3) <br> X-- (2)</p>
         <p>Existe o pós e pré incremento. Em um o sinal vem depois da variavel (X++) e no vem antes (++X) </p>
     </section>
+     <!---------------------------------------Aula 08----------------------------------------------->
 
+        <p class="botao" onclick="visivel8()">Aula 08</p>
+        <section class="texto" id="aula08">
+            <h2>Operadores relacionais</h2>
+            <ul type="none">
+                <li> > Maior</li>
+                <li> < Menor</li>
+                <li> >= Maior Igual</li>
+                <li> <= Menor Igual</li>
+                <li> == Igual </li>
+                <li> != Diferente </li>
+            </ul>
+            <img src="../jpeg/modulo-b-4.JPG" alt="Operadores relacionais">
+            <p>observação: Para o JavaScript o valor tipo Number é igual o valor do tipo string, exemplo: 5 == '5'</p>
+            <p>Quando é usado 3 iguais, o significado é de oindentico</p>
+            <p>Operador de Negação</p>
+            <img src="../jpeg/modulo-b-5.JPG" alt="Operador de negação">
+            <p>Conjunção</p>
+            <img src="../jpeg/modulo-b-6.JPG" alt="Operador de conjunção">
+            <p>Disjunção</p>
+            <img src="../jpeg/modulo-b-7.JPG" alt="Operador de disjunção">
+            <p>Explicações:</p>
+            <img src="../jpeg/modulo-b-8.JPG" alt="Exemplos">
+            <h2>Operador ternario</h2>
+            <p>Se chama ternario porque tem 3 partes</p>
+            <ul type="none">
+                <li>teste</li>
+                <li>True</li>
+                <li>False</li>
+            </ul>
+            <img src="../jpeg/modulo-b-9.JPG" alt="Ternario">
 
+        </section>
 
     <!--------------------------------------------------Script------------------------------------>
     <script>
@@ -138,6 +170,18 @@
             if (aula06.style.display == 'block'){
                 aula06.style.display = 'none'}
             else{aula06.style.display = 'block'}
+        }
+
+        function visivel7(){
+            if (aula07.style.display == 'block'){
+                aula07.style.display ='none'}
+            else{aula07.style.display ='block'}
+        }
+
+        function visivel8(){
+            if (aula08.style.display == 'block'){
+                aula08.style.display ='none'}
+            else{aula08.style.display ='block'}
         }
     </script>
 </body>
