@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/media-quieres.css">
+    <title>Arquivo 04</title>
+    <style>
+        body{
+            background-color: darkslategrey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p class="botao"><a href="../modulos/modulo-b.html">Voltar</a></p>
+    <section class="texto">
+        <h2>Iniciando estudos DOM</h2>
+        <p>Aqui vai o resultado</p>
+        <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+        <div>Clique em mim</div>
+        <br><p>A ultima linha (está escrito assim) foi criada por javascript com o seguinte comando:</p>
+        <pre>
+            <code>
+script
+    var p1 = window.document.getElementsByTagName('p')[0]
+    window.document.write(`Está escrito assim: ${p1.innerText}`)
+script
+            </code>
+        </pre>
+        <p>Este código criado com o metodo <strong>MARCA</strong> pegou o 1º paragrafo  <strong>p[0] </strong>e replicou ele usando <strong>write innerText</strong></p> <br>
+    </section>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(`Está escrito assim: ${p1.innerText}`)
+    </script>
+    
+</body>
+</html>
