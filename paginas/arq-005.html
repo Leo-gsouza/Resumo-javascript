@@ -14,12 +14,22 @@
     </style>
 </head>
 <body>
-    <p class="botao"><a href="../modulos/modulo-b.html">Voltar</a></p>
+    <p class="botao"><a href="../modulos/modulo-c.html">Voltar</a></p>
     <section class="texto">
         <h2>Iniciando estudos DOM</h2>
         <p>Aqui vai o resultado</p>
         <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
-        <div>Clique em mim</div>
+        <div id="clicar">Clique em mim</div>
+        <p>Clique em mim foi criado com javascript usando o seguinte comando:</p>
+        <pre>
+            <code>
+script
+    var indentificador = window.document.getElementById('clicar')
+    indentificador.style.background = 'lightblue'
+    indentificador.style.color = 'black'
+script
+            </code>
+        </pre>
         <br><p>A ultima linha (está escrito assim) foi criada por javascript com o seguinte comando:</p>
         <pre>
             <code>
@@ -29,12 +39,36 @@ script
 script
             </code>
         </pre>
-        <p>Este código criado com o metodo <strong>MARCA</strong> pegou o 1º paragrafo  <strong>p[0] </strong>e replicou ele usando <strong>write innerText</strong></p> <br>
+        <p>Foi utilizado o <strong>getElementsByTagName</strong> e entre parenteses o <strong>p</strong> de paragrafo seguido de um <strong>0</strong> entre cochetes que referencia o 1º paragrafo do arquivo.</p>
+        <p>Este código criado com o metodo <strong>MARCA</strong> pegou o conteudo do 1º paragrafo  <strong>p[0] </strong>e replicou ele usando <strong>write innerText</strong></p> <br>
+        <img src="../jpeg/modulo-c-2.JPG" alt="script">
+        <h2 id="select">Por Selector</h2>
+        <p>é recomendada pelos manuais.</p>
+        <pre>
+            <code>
+script
+var selector = window.document.querySelector('h2#select')
+selector.style.color = 'yellow'
+script
+            </code>
+        </pre>
+
+        <p></p>
     </section>
 
     <script>
+        /* POR MARCA » Nome da TAG */
         var p1 = window.document.getElementsByTagName('p')[0]
         window.document.write(`Está escrito assim: ${p1.innerText}`)
+        /* POR ID » Id criado na TAG */
+        var indentificador = window.document.getElementById('clicar')
+        indentificador.style.background = 'lightblue'
+        indentificador.style.color = 'black'
+        /* Por querySelector */
+        var selector = window.document.querySelector('h2#select')
+        selector.style.color = 'yellow'
+        
+
     </script>
     
 </body>

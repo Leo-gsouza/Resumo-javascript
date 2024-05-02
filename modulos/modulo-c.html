@@ -17,7 +17,7 @@
         <ul type="none">
             <li><a href="../index.html">Página Inicial</a></li>
             <li><a href="../modulos/modulo-a.html">Módulo A</a></li>
-            <li><a href="../modulos/modulo-a.html">Módulo B</a></li>
+            <li><a href="../modulos/modulo-b.html">Módulo B</a></li>
             <li class="ativo"><a href="../modulos/modulo-c.html">Módulo C</a></li>
             <li><a href="#">Módulo D</a></li>
             <li><a href="#">Módulo E</a></li>
@@ -39,17 +39,26 @@
         <h2>Navegar entre os elementos</h2>
         <p>Metodos de acesso para os elementos</p>
         <ul type="none">
-            <li><a href="../paginas/arq-005.html">Marca</a> » getElementsByTagName()</li>
-            <li>ID</li>
-            <li>Nome</li>
+            <li>Marca » getElementsByTagName(nome da TAG)</li>
+            <li>ID » getElementById(Nome do Id)</li>
+            <li>Nome » </li>
             <li>Classe</li>
             <li>Seletor</li>
         </ul>
-
-        
+        <p>Dicas: innerText » Copia somente o conteudo escrito</p>
+        <p>Dicas: innerHTML » Copia o conteudo + tags filhas</p>
     </section>
 
     <!---------------------------------------Aula 10----------------------------------------------->
     
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'}
+            else{itens.style.display = 'block'}
+        }
+    </script>
+
+
 </body>
 </html>

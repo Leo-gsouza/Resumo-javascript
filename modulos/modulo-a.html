@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../estilos/media-quieres.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Modula A</title>
+    <style> section.texto {display: none};</style>
 </head>
 <body>
     <header>
@@ -118,7 +119,7 @@
     </section>
    
 <!--------------------------------------------------AULA04--------------------------------------------->
-    <p class="botao">Aula 04</p>
+    <p class="botao" onclick="visivel4()">Aula 04</p>
     <section class="texto" id="aula04">
         <h2>Primeiros passos com VSCODE</h2>
         <p>Organizar arquivos na pasta</p>
@@ -150,6 +151,12 @@
             if (aula03.style.display == 'block'){
                 aula03.style.display ='none'}
             else{aula03.style.display ='block'}
+        }
+
+        function visivel4(){
+            if (aula04.style.display == 'block'){
+                aula04.style.display = 'none'}
+            else{aula04.style.display = 'block'}
         }
     </script>
 </body>
