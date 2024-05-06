@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/media-quieres.css">
+    <title>Arquivo 06</title>
+    <style>
+        body{
+            background-color: darkslategrey;
+            color: white;
+        }
+        div{
+            line-height: 200px;
+            text-align: center;
+            display: block;
+            margin: auto;
+            background-color: greenyellow;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            color: red;
+            width: 200px;
+            height: 200px;   
+        }
+
+    </style>
+</head>
+<body>
+    <p class="botao"><a href="../modulos/modulo-c.html">Voltar</a></p>
+    <section class="texto">
+        <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()">
+            Interaja....
+        </div>
+        <p>O elemento do execricio é a Div, e o Evento DOM é tudo o que pode acontecer com a DIV.</p>
+        <p>Exemplo:</p>
+        <img src="../jpeg/modulo-c-3.JPG" alt="Eventos DOM">
+        <p> Os eventos que podem ocorrer com o Elemento Div acima estão relacionado ao mouse com a DIV</p>
+        <ol type="a">
+            <li>mouseenter » Mouse entrou na DIV</li>
+            <li>mousemove » mouse se movendo dentro da DIV</li>
+            <li>mousedown » clicar e segurar</li>
+            <li>mouseup » soltar o clique </li>
+            <li>click » clique rapido</li>
+            <li>mouseout » Sair da DIV</li>
+        </ol>
+        <p>Para aplicar esses eventos é necessário usar funções com o nome da ação e um bloco com os comandos para criar a interação. Exemplo na imagem abaixo:</p>
+        <img src="../jpeg/modulo-c-4.jpg" alt="Interação">
+        <p>No elemento em que será aplicado a interação é necessário colocar o tipo de evento desejado, como no caso acima foi inserido o evento onclick (quando clicar) seguido do nome da função que será utilizado dentro do SCRIPT. Resumindo, <strong>dentro do elemento div foi inserido o evento onclick e a função chamada de clicar</strong> </p>
+        <p>Dentro do SCRIPT foi inserido a função » function clicar() seguida do bloco {}</p>
+        <p>Dentro do bloco foi criado a interação. 1º passo foi criado uma <strong>variavel chamada area</strong> que está recebendo o elemento da div, utilizando a <strong>MARCA ID</strong>. Note que dentro da <strong>DIV</strong> foi criado um <strong>ID chamado 'area'</strong> e o metodo usado para chamar o <strong>elemento</strong> foi este ID, usando o <strong>getElementById</strong></p>
+        <p>Abaixo pegamos essa variavel que recebou a DIV e aplicamos um innerText, que tem o objetivo de apresentar um texto. O texto recebido foi clicou! </p>
+        <p>Resumindo: Quando clicar em cima da DIV irá aparecer um texto clicou!</p>
+        <h2>Deixar o HTML mais limpo</h2>
+        <p>Para não precisar inserir os eventos dentro do elemento no HTML, pode-se inserir eles dentro do script, exemplo:</p>
+        <p>var area = window.document.getElementById('area')</p>
+        <p>area.addEventListener('click' , clicar)</p>
+        <p>Deixa o codigo mais limpor e simplificado. Entenda que foi criado uma variavel que recebeu o elemento DIV usando a MARCA ID e logo abaixo foi adicionado o addEventListener(tipo do evento, função)</p>
+    </section>
+
+
+<!--------------------------------------------- SCRIPT ------------------------------------------------>
+
+    <script>
+        var area = window.document.getElementById('area')
+
+        function clicar(){
+            area.innerText = 'clicou!'
+            area.style.background ='red'
+            area.style.color ='white'
+        }
+
+        function entrar(){
+            area.innerText = 'Entrou!'
+        }
+
+        function saiu(){
+            area.innerText = 'Saiu!'
+        }
+    </script>
+    
+</body>
+</html>

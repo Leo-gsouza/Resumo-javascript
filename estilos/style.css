@@ -204,3 +204,14 @@ pre > code {
     background-color: lightgoldenrodyellow;
     color: black;
 }
+
+section.texto > ol{
+    width: 240px;
+    display: block;
+    margin: auto;
+    font-size: 0.8em;
+}
+
+section.texto > ol > li{
+    line-height: 22px;
+}
