@@ -72,6 +72,10 @@
         var tn3 = window.document.getElementById('txtn3')
         var res = window.document.getElementById('res')
 
+        tn2.addEventListener('mouseenter',  entrou2)
+        tn2.addEventListener('mouseout', saiu2)
+        tn2.addEventListener('mousedown', segurou2)
+
         
         function somar(){
             var n1 = Number(tn1.value)
@@ -87,6 +91,18 @@
 
         function saiu(){
             tn1.style.background = 'white'
+        }
+
+        function entrou2(){
+            tn2.style.background = 'yellow'
+        }
+
+        function saiu2(){
+            tn2.style.background = 'white'
+        }
+
+        function segurou2(){
+            tn2.style.background = 'red'
         }
 
 

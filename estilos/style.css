@@ -140,6 +140,7 @@ main > img{
 }
 
 main > section.texto{
+    display: none;
     margin: auto;
     min-width: 300px;
     max-width: 400px;
@@ -147,6 +148,7 @@ main > section.texto{
     padding: 20px 5px;
     background-color: white;
     border-radius: 10px;
+    display: none;
 }
 
 
