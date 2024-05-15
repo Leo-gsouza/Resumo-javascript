@@ -9,6 +9,8 @@ function verificar(){
     var sexo = document.getElementsByName('sex')
     var genero = ''
     var img = document.getElementById('imagem')
+    var caixa = document.getElementById('caixa')
+    var titulo = document.getElementById('titulo')
     
 
     /* VERIFICAÇÃO DE ERRO DE DIGITAÇÃO DO USUARIO */
@@ -20,19 +22,24 @@ function verificar(){
 
     /* VERIFICAR O SEXO DIGITADO PELO USUARIO */
     if (sexo[0].checked){
+        caixa.style.background = '#0897B4'
+        document.body.style.backgroundImage = "url('../imagens/fundo-homem.png')"
+        caixa.style.color = 'white'
+        titulo.style.color = 'transparent'
+        titulo.style.textShadow = 'none'
         if (idade >= 0 && idade <= 2){
             img.src = '../imagens/pessoa1.png'
             genero = 'bebe'
         }else if (idade <= 10){
             img.src = '../imagens/pessoa2.png'
             genero = 'menino'
-        }else if (idade <= 18){
+        }else if (idade <= 25){
             img.src = '../imagens/pessoa3.png'
             genero =' adolecente'
-        }else if (idade <= 40){
+        }else if (idade <= 45){
             img.src = '../imagens/pessoa4.png'
             genero = 'homem'
-        }else if (idade <= 60){
+        }else if (idade <= 65){
             img.src = '../imagens/pessoa5.png'
             genero ='homem'
 
@@ -42,10 +49,45 @@ function verificar(){
 
 
     }else if (sexo[1].checked){
-        genero = 'Mulher'
+        caixa.style.background = '#AC4568'
+        caixa.style.color = 'white'
+        document.body.style.backgroundImage = "url('../imagens/fundo-mulher.jpg')"
+        titulo.style.color = 'transparent'
+        titulo.style.textShadow = 'none'
+
+        if (idade <= 2){
+            img.src = '../imagens/mulher1.png'
+            genero = 'bebe'
+
+        }else if (idade <= 10){
+            genero = 'menina'
+            img.src = '../imagens/mulher2.png'
+
+        }else if (idade <= 25){
+            genero = 'adolecente'
+            img.src = '../imagens/mulher3.png'
+
+        }else if (idade <= 45){
+            genero = 'mulher'
+            img.src = '../imagens/mulher4.png'
+
+        }else if (idade <= 65){
+            genero = 'mulher'
+            img.src = '../imagens/mulher5.png'
+
+        }else{
+            genero = 'idosa'
+            img.src = '../imagens/mulher6.png'
+        }
     }
 
-    resultado.innerHTML = `Um ${genero} de ${idade} anos`
+    if (sexo[0].checked){
+        resultado.innerHTML = `Um ${genero} de ${idade} ano(s)`
+
+    }else if (sexo[1].checked){
+        resultado.innerHTML = `Uma ${genero} de ${idade} ano(s)`
+    }
+
     resultado.appendChild(img)
 
     

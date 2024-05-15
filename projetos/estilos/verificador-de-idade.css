@@ -13,10 +13,15 @@ header{
 header > h1{
     color: white;
     margin-top: 80px;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-family: fantasy;
+    font-weight: normal;
+    text-shadow: 0px 0px 20px black;
 }
 
 body{
-    background: url('../imagens/dia-desfoque.jpg') top center no-repeat fixed;
+    background: url('../imagens/fundo-time.jpg') top center no-repeat fixed;
     background-size: cover;
 }
 
@@ -25,10 +30,11 @@ section {
     margin: auto;
     width: 310px;
 
-    background-color: darkslateblue;
-    color: white;
+    background-image: linear-gradient(to right, rgb(230, 225, 225), rgb(219, 217, 217));
+    color: black;
     border: 3px solid lightblue;
     border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);
 
     padding: 14px;
 }
@@ -60,17 +66,22 @@ input[type='button']{
     margin-top: 15px;
     margin-bottom: 10px;
 
-    border: 3px solid yellow;
-    background-color: white;
+    border: 3px solid darkgrey;
+    background-color: gray;
     border-radius: 10px;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
 
-    font-variant: small-caps;
-    font-size: 1.1em;
+    text-transform: uppercase;
+    font-size: 1em;
 }
 
 div#res{
     text-align: center;
     padding: 10px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-family: monospace;
 }
 
 div#foto{
@@ -82,4 +93,7 @@ img#imagem{
     margin: auto;
     width: 220px;
     margin-top: 10px;
+
+    box-shadow: 0px 0px 20px white;
+    border-radius: 50%;
 }
