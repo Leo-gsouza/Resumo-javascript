@@ -22,138 +22,134 @@
             <li><a href="../modulos/modulo-a.html">Módulo A</a></li>
             <li class="ativo"><a href="../modulos/modulo-a.html">Módulo B</a></li>
             <li><a href="../modulos/modulo-c.html">Módulo C</a></li>
-            <li><a href="#">Módulo D</a></li>
+            <li><a href="../modulos/modulo-d.html">Módulo D</a></li>
             <li><a href="#">Módulo E</a></li>
             <li><a href="#">Módulo F</a></li>
+            <li><a href="../modulos/exercicios.html">Exercicios</a></li>
         </ul>
     </menu>
-    <h1>Módulo B</h1>
-
-    <!---------------------------------------------AULA05---------------------------------------------->
-    <p class="botao" onclick="visivel5()">Aula 05</p>
-    <section class="texto" id="aula05">
-        <h2>Tipos de dados e variáveis</h2>
-        <p>Cometarios: Os comentarios podem ser simbolizados por:</p>
-        <ul type="none">
-            <li>// » Serve apenas para uma linha</li>
-            <li>/*  */ » Multiplas linhas</li>
-        </ul>
-        <p>Usar dentro do comando SCRIPT</p>
-        <img src="../jpeg/modulo-b-1.JPG" alt="Comentarios">
-
-        <h2>Variaveis</h2>
-        <ul type="none">
-            <li> = Recebe</li>
-            <li> == Igual</li>
-            <li> null » Sem nada dentro </li>
-        </ul>
-        <p>Variavel é um espaço reservado para receber um valor</p>
-        <h2>String</h2>
-        <p>Existem 3 formas de delimitar uma string » " ' ´ </p>
-        <h2>Nome da variavel</h2>
-        <p>As variaveis são chamadas de indentificadores e possuem regras para nomea-las</p>
-        <ul type="none">
-            <li>Podem começar com uma letra, cifrão$ e subblinhado_</li>
-            <li>Não podem começar com numeros</li>
-            <li>É possivel usar letras e numeros</li>
-            <li>É possivel usar acentos e simbolos</li>
-            <li>Não pode ter espaço</li>
-            <li>Não podem ser palavras reservadas</li>
-        </ul>
-        <p>Dicas para criar nome de variaveis</p>
-        <ul type="none">
-            <li>Maiuscula e miniscula fazem diferença</li>
-            <li>Usar nomes coerentes</li>
-        </ul>
-        <p>Será usado o <strong>nodejs</strong> para trabalhar com as variaveis. Ele pode ser acessado pelo terminal do VSCODE, basta digitar node no terminal</p>
-        <p>Varialvel guarda todo tipo de dado que podem ser STRINGS, NUMBER(infinity/NaN) ou BOOLEAN(null/undefined) Object , Function</p>
-        <p>Usando o <strong>typeof</strong> você sabe o tipo da variavel</p>
-    </section>
-
-    <!---------------------------------------------AULA06---------------------------------------------->
-
-    <p class="botao" onclick="visivel6()">Aula06</p>
-    <section class="texto" id="aula06">
-        <h2>window.prompt</h2>
-        <p>Será criado interação com a informação digitada na caixa do window.prompt</p>
-        <p>Acessar o <a href="../paginas/arq-002.html">Arquivo 002</a></p>
-        <p>No arquivo 002 foi criado uma interação digitando o nome na caixa de prompt</p>
-        <p>Acessar o <a href="../paginas/arq-003.html">Arquivo 003</a></p>
-        <p>No arquivo 003 foi ensinado:</p>
-        <ul type="none">
-            <li>Interação usando duas variaveis usando o comando prompt</li>
-            <li>As duas formas de usar o sinal de +, concatenar e somar</li>
-            <li>Conversão de string para number e vice-versa</li> 
-            <li>Usar o placeholder ${} para facilitar a junção de texto e variavel</li>
-        </ul>"
-        <p>Acessar o <a href="../paginas/arq-004.html">arquivo 004</a></p>
-        <p>No arquivo foi ensinado:</p>
-        <ul type="none">
-            <li>Formatações de string » s.toleght, s.toUpperCase(), s.toLowerCase()</li>
-            <li>Comando document.write para exibir na pçagina um resultado de uma interação</li>
-            <li>Dentro do document.write pode se usar TAGS do HTML. (`«h1» blabalbla`«/h1»)</li>
-            <li>Usar o writeln ou br dentro do parenteses para quebrar a linha</li>
-            <li>Comando variavel.toFixed(2) » duas casas depois do ponto</li>
-            <li>Comando variavel.toFixed(2).replace('.' , ',') Vai trocar o ponto pela virgula</li>
-            <li><strong>Formatação em moeda » n1.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})</strong></li>
-        </ul>
-    </section>
-
-    
-    <!---------------------------------------Aula 07----------------------------------------------->
-    <p class="botao" onclick="visivel7()">Aula 07</p>
-    <section class="texto" id="aula07">
-        <h2>Operadores aritimeticos</h2>
-        <img src="../jpeg/modulo-b-2.JPG" alt="Aritimético">
-        <p>Respeita a ordem de precedência</p>
-        <ul type="none">
-            <li>1º Parenteses <strong>()</strong> </li>
-            <li>2º Exponenciação <strong>**</strong></li>
-            <li>3º Multiplicação <strong>*</strong> ou Divisão <strong>/</strong> da esquerda para direita</li>
-            <li>4º Soma <strong>+</strong> e subtração <strong>-</strong> da esquerda para direita</li>
-        </ul>
-        <h2>Auto atribuição</h2>
-        <p>Utilizar a variavél em outra soma alterando seu valor, exemplo:  <br>N = 5 <br>N += 3 (5 + 3 = 8) <br>N -= 6 (8 - 6 = 2) <br>N *= 5 (2 * 5 = 10) </p>
-        <img src="../jpeg/modulo-b-3.JPG" alt="Auto-atribuição">
-        <h2>Operador de incremento</h2>
-        <p>Utilizar ++ ou -- para variavel receber +1 ou -1. exxemplo</p>
-        <p>X = 1 (1)<br> X+= 1 (2) <br> X++ (3) <br> X-- (2)</p>
-        <p>Existe o pós e pré incremento. Em um o sinal vem depois da variavel (X++) e no vem antes (++X) </p>
-    </section>
-     <!---------------------------------------Aula 08----------------------------------------------->
-
-        <p class="botao" onclick="visivel8()">Aula 08</p>
-        <section class="texto" id="aula08">
-            <h2>Operadores relacionais</h2>
+    <main>
+        <h1>Módulo B</h1>
+        <!---------------------------------------------AULA05---------------------------------------------->
+        <p class="botao" onclick="visivel5()">Aula 05</p>
+        <section class="texto" id="aula05">
+            <h2>Tipos de dados e variáveis</h2>
+            <p>Cometarios: Os comentarios podem ser simbolizados por:</p>
             <ul type="none">
-                <li> > Maior</li>
-                <li> < Menor</li>
-                <li> >= Maior Igual</li>
-                <li> <= Menor Igual</li>
-                <li> == Igual </li>
-                <li> != Diferente </li>
+                <li>// » Serve apenas para uma linha</li>
+                <li>/*  */ » Multiplas linhas</li>
             </ul>
-            <img src="../jpeg/modulo-b-4.JPG" alt="Operadores relacionais">
-            <p>observação: Para o JavaScript o valor tipo Number é igual o valor do tipo string, exemplo: 5 == '5'</p>
-            <p>Quando é usado 3 iguais, o significado é de oindentico</p>
-            <p>Operador de Negação</p>
-            <img src="../jpeg/modulo-b-5.JPG" alt="Operador de negação">
-            <p>Conjunção</p>
-            <img src="../jpeg/modulo-b-6.JPG" alt="Operador de conjunção">
-            <p>Disjunção</p>
-            <img src="../jpeg/modulo-b-7.JPG" alt="Operador de disjunção">
-            <p>Explicações:</p>
-            <img src="../jpeg/modulo-b-8.JPG" alt="Exemplos">
-            <h2>Operador ternario</h2>
-            <p>Se chama ternario porque tem 3 partes</p>
+            <p>Usar dentro do comando SCRIPT</p>
+            <img src="../jpeg/modulo-b-1.JPG" alt="Comentarios">
+            <h2>Variaveis</h2>
             <ul type="none">
-                <li>teste</li>
-                <li>True</li>
-                <li>False</li>
+                <li> = Recebe</li>
+                <li> == Igual</li>
+                <li> null » Sem nada dentro </li>
             </ul>
-            <img src="../jpeg/modulo-b-9.JPG" alt="Ternario">
-
+            <p>Variavel é um espaço reservado para receber um valor</p>
+            <h2>String</h2>
+            <p>Existem 3 formas de delimitar uma string » " ' ´ </p>
+            <h2>Nome da variavel</h2>
+            <p>As variaveis são chamadas de indentificadores e possuem regras para nomea-las</p>
+            <ul type="none">
+                <li>Podem começar com uma letra, cifrão$ e subblinhado_</li>
+                <li>Não podem começar com numeros</li>
+                <li>É possivel usar letras e numeros</li>
+                <li>É possivel usar acentos e simbolos</li>
+                <li>Não pode ter espaço</li>
+                <li>Não podem ser palavras reservadas</li>
+            </ul>
+            <p>Dicas para criar nome de variaveis</p>
+            <ul type="none">
+                <li>Maiuscula e miniscula fazem diferença</li>
+                <li>Usar nomes coerentes</li>
+            </ul>
+            <p>Será usado o <strong>nodejs</strong> para trabalhar com as variaveis. Ele pode ser acessado pelo terminal do VSCODE, basta digitar node no terminal</p>
+            <p>Varialvel guarda todo tipo de dado que podem ser STRINGS, NUMBER(infinity/NaN) ou BOOLEAN(null/undefined) Object , Function</p>
+            <p>Usando o <strong>typeof</strong> você sabe o tipo da variavel</p>
         </section>
+        <!---------------------------------------------AULA06---------------------------------------------->
+        <p class="botao" onclick="visivel6()">Aula06</p>
+        <section class="texto" id="aula06">
+            <h2>window.prompt</h2>
+            <p>Será criado interação com a informação digitada na caixa do window.prompt</p>
+            <p>Acessar o <a href="../paginas/arq-002.html">Arquivo 002</a></p>
+            <p>No arquivo 002 foi criado uma interação digitando o nome na caixa de prompt</p>
+            <p>Acessar o <a href="../paginas/arq-003.html">Arquivo 003</a></p>
+            <p>No arquivo 003 foi ensinado:</p>
+            <ul type="none">
+                <li>Interação usando duas variaveis usando o comando prompt</li>
+                <li>As duas formas de usar o sinal de +, concatenar e somar</li>
+                <li>Conversão de string para number e vice-versa</li>
+                <li>Usar o placeholder ${} para facilitar a junção de texto e variavel</li>
+            </ul>"
+            <p>Acessar o <a href="../paginas/arq-004.html">arquivo 004</a></p>
+            <p>No arquivo foi ensinado:</p>
+            <ul type="none">
+                <li>Formatações de string » s.toleght, s.toUpperCase(), s.toLowerCase()</li>
+                <li>Comando document.write para exibir na pçagina um resultado de uma interação</li>
+                <li>Dentro do document.write pode se usar TAGS do HTML. (`«h1» blabalbla`«/h1»)</li>
+                <li>Usar o writeln ou br dentro do parenteses para quebrar a linha</li>
+                <li>Comando variavel.toFixed(2) » duas casas depois do ponto</li>
+                <li>Comando variavel.toFixed(2).replace('.' , ',') Vai trocar o ponto pela virgula</li>
+                <li><strong>Formatação em moeda » n1.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})</strong></li>
+            </ul>
+        </section>
+        
+        <!---------------------------------------Aula 07----------------------------------------------->
+        <p class="botao" onclick="visivel7()">Aula 07</p>
+        <section class="texto" id="aula07">
+            <h2>Operadores aritimeticos</h2>
+            <img src="../jpeg/modulo-b-2.JPG" alt="Aritimético">
+            <p>Respeita a ordem de precedência</p>
+            <ul type="none">
+                <li>1º Parenteses <strong>()</strong> </li>
+                <li>2º Exponenciação <strong>**</strong></li>
+                <li>3º Multiplicação <strong>*</strong> ou Divisão <strong>/</strong> da esquerda para direita</li>
+                <li>4º Soma <strong>+</strong> e subtração <strong>-</strong> da esquerda para direita</li>
+            </ul>
+            <h2>Auto atribuição</h2>
+            <p>Utilizar a variavél em outra soma alterando seu valor, exemplo:  <br>N = 5 <br>N += 3 (5 + 3 = 8) <br>N -= 6 (8 - 6 = 2) <br>N *= 5 (2 * 5 = 10) </p>
+            <img src="../jpeg/modulo-b-3.JPG" alt="Auto-atribuição">
+            <h2>Operador de incremento</h2>
+            <p>Utilizar ++ ou -- para variavel receber +1 ou -1. exxemplo</p>
+            <p>X = 1 (1)<br> X+= 1 (2) <br> X++ (3) <br> X-- (2)</p>
+            <p>Existe o pós e pré incremento. Em um o sinal vem depois da variavel (X++) e no vem antes (++X) </p>
+        </section>
+         <!---------------------------------------Aula 08----------------------------------------------->
+            <p class="botao" onclick="visivel8()">Aula 08</p>
+            <section class="texto" id="aula08">
+                <h2>Operadores relacionais</h2>
+                <ul type="none">
+                    <li> > Maior</li>
+                    <li> < Menor</li>
+                    <li> >= Maior Igual</li>
+                    <li> <= Menor Igual</li>
+                    <li> == Igual </li>
+                    <li> != Diferente </li>
+                </ul>
+                <img src="../jpeg/modulo-b-4.JPG" alt="Operadores relacionais">
+                <p>observação: Para o JavaScript o valor tipo Number é igual o valor do tipo string, exemplo: 5 == '5'</p>
+                <p>Quando é usado 3 iguais, o significado é de oindentico</p>
+                <p>Operador de Negação</p>
+                <img src="../jpeg/modulo-b-5.JPG" alt="Operador de negação">
+                <p>Conjunção</p>
+                <img src="../jpeg/modulo-b-6.JPG" alt="Operador de conjunção">
+                <p>Disjunção</p>
+                <img src="../jpeg/modulo-b-7.JPG" alt="Operador de disjunção">
+                <p>Explicações:</p>
+                <img src="../jpeg/modulo-b-8.JPG" alt="Exemplos">
+                <h2>Operador ternario</h2>
+                <p>Se chama ternario porque tem 3 partes</p>
+                <ul type="none">
+                    <li>teste</li>
+                    <li>True</li>
+                    <li>False</li>
+                </ul>
+                <img src="../jpeg/modulo-b-9.JPG" alt="Ternario">
+            </section>
+    </main>
 
     <!--------------------------------------------------Script------------------------------------>
     <script>

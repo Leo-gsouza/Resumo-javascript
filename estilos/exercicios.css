@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+section{
+    display: block;
+    margin: auto;
+    width: 280px;
+    height: 100vh;
+}
+
+section > p{
+    font-size: 1.5em;
+    text-align: justify;
+    margin: 15px 3px ;
+}
+
+form > fieldset{
+    background-color: lightgoldenrodyellow;
+    padding: 25px 10px;
+}
+
+fieldset > legend{
+    text-align: center;
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+}
+
+fieldset > div{
+    margin-bottom: 7px;
+    position: relative;
+}
+
+input[type='number'], input[type='text']{
+    position: absolute;
+    left: 122px;
+    width: 120px;
+    border: 1px solid black;
+}
+
+
+input[type='button']{
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 120px;
+    padding: 10px;
+
+    font-size: 1.15em;
+    text-transform: uppercase;
+    
+}
+
+div#res{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+
+    background-color: white;
+    border: 1px solid black;
+
+}

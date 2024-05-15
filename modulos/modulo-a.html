@@ -20,115 +20,117 @@
             <li class="ativo"><a href="../modulos/modulo-a.html">Módulo A</a></li>
             <li><a href="../modulos/modulo-b.html">Módulo B</a></li>
             <li><a href="../modulos/modulo-c.html">Módulo C</a></li>
-            <li><a href="#">Módulo D</a></li>
+            <li><a href="../modulos/modulo-d.html">Módulo D</a></li>
             <li><a href="#">Módulo E</a></li>
             <li><a href="#">Módulo F</a></li>
+            <li><a href="../modulos/exercicios.html">Exercicios</a></li>
         </ul>
     </menu>
     
     <!----------------------------------------------AULA01--------------------------------------------->
 
-    <h1>Módulo A</h1>
-    <p class="botao" onclick="visivel1()">Aula 01</p>
-    <section class="texto" id="aula01">
-        <h2>Conceito: Cliente x Servidor</h2>
-        <img src="../jpeg/cliente x servidor 1.JPG" alt="HTML-CSS-JS">
-        <p>Javascript funciona muito mais do lado do cliente</p>
-        <h2>Construção de um web site</h2>
-        <p>Necessário 3 profissionais</p>
-        <ul type="none">
-            <li>Jornalista = Conteúdo = HTML</li>
-            <li>Designer = Estilo = CSS</li>
-            <li>Programador = Interação = JS</li>
-        </ul>
-        <img src="../jpeg/modulo-a-2.JPG" alt="">
-        <h2>Desabilitar JS em sites</h2>
-        <p>Vá até o DEVTOOLS > configurações > Disable JS</p>
-        <img src="../jpeg/modulo-a-3.JPG" alt="Devtools">
-        <h2>Modificar sites que usam JS</h2>
-        <img src="../jpeg/modulo-a-4.jpg" alt="Devtools">
-        <ul type="none">
-            <li>1.Para pegar o nome</li>
-            <li>2.Local para fazer as modificações</li>
-            <li>3.Local para digitar o código</li>
-        </ul>
-        <p>Para alterar a cor do fundo do goole é necessário abrir o devtools, entrar em console e digitar: <strong>document.body.style.background = 'black'</strong>. Isso quer dizer o estilo(style) da cor do fundo(background) do corpo(body) do documento(document) é = preta('black') </p>
-        <p>Digitando <strong>alert('texto qualquer')</strong> o site envia uma notificação</p>
-        <p>Digitando <strong>document.querySelector('nome').style.filter ='grayscale(100%)</strong>. Esse codigo vai deixar a imagem em branco e preto.</p>
-        <p>Digitando <strong>document.querySelector('nome').style.visibility = 'hidden'</strong>. Vai esconder a imagem</p>
-        <p>Digitando <strong>documento.querySelector('nome').innerText = 'Digite o seu texto'</strong>. Vai alterar o texto da manchete</p>
-        <p><strong>Observação:</strong> Essas alterações alteram apenas o javascript que já chegou em sua maquina. Não interfere na plataforma do site, ou seja, outras pessoas que estão acesando o site não veem essa modificação</p>
-        <h2>Questionario</h2>
-        <p>Sabe a diferença entre um cliente e um servidor?</p>
-        <p>Para que serve HTML, CSS e javaScript</p>
-        <p>Cite 4 sites que fazem uso do JS</p>
-    </section>
-
-<!--------------------------------------------------AULA02--------------------------------------------->
-    <p class="botao" onclick="visivel2()">Aula 02</p>
-    <section class="texto" id="aula02" >
-        <h2>A evolução do JavaScript</h2>
-        <p> Em meados de <strong>1960</strong> <strong>D. Eisenhower(EUA)</strong> desenvolveu uma agencia de tecnologia » <strong>DARPA</strong> </p>
-        <p> A ideia da <strong>DARPA</strong> foi criar uma rede para proteger os dados caso o local em que eles estivessem fossem atacados pela <strong>URSS</strong></p>
-        <p>A rede criada pela <strong>DARPA</strong> recebeu o nome de <strong>ARPANET</strong>, protegida pelos militares inicialmente, mas com a sua grande expansão e conexão com outras pequenas redes ela passou a se chamar de <strong>internet</strong>.</p>
-        <p>Em <strong>1993</strong> em Genebra, <strong>Timothy Berners-Lee(CERN)</strong> foi responsavel pela tecnologia <strong>HTML</strong>, protocolo <strong>HTTP</strong> que se juntou ao conjunto de protocolos <strong>TCP/IP</strong> e também fundou a World Wide Web (WWW). </p>
-        <p>Neste mesmo ano foi criado nos <strong>EUA</strong> o <strong>Mosaic</strong> (navegador), criado pelo centro nacional de aplicações de supercomputadores (<strong>NCSA</strong>), pelo pesquisador <strong>Marc Andreesen</strong>. Depois de sair da <strong>NCSA</strong> ele se juntou com <strong>Jim Clark</strong> e fundaram uma empresa chamada <strong>Netscap</strong> e criaram o navegador superior, baseado do <strong>godzilla</strong>.</p>
-        <p>Em <strong>1995</strong> Brandon Erich se juntou  Netscap e estava criando uma linguagem chamada <strong>Moca</strong> ou <strong>livescript</strong>, mas ao memso tempo outra linguagem estava tendo maior visibilidade, a liguagem <strong>JAVA</strong>, com isso o nome moca/livescript foi alterado para <strong>javascript</strong>, pois o nome <strong>JAVA</strong> estava em alta.</p>
-        <p>A liguagem <strong>javascript</strong> fez bastante sucesso e a <strong>Microsoft</strong> criou sua propria liguagem <strong>JScript</strong> e seu navegador <strong>Internet Explorer</strong>. A <strong>netscap</strong> resolveu padronizar a liguagem para não virar baçunça, com isso procurou a <strong>ECMA(EUR)</strong> e surgiu a linguagem <strong>javascript</strong>, que é uma padronização da liguagem.</p>
-        <p>Em 2002 encerrou a briga entre <strong>Netscap</strong> e <strong>Microsoft</strong>. Devido a <strong>Microsoft</strong> fornecer nagebador com a liguagem a netscap acabou falindo e se tornou o <strong>Mozilla Firefox</strong>, mas não conseguiu ter muito espaço devido a ascensão do <strong>Google Chrome</strong> que é o navegador mais famoso do mundo devido ao seu motor que faz rodar o <strong>javascript</strong>, conhecido como <strong>V8</strong> que gera codigo <strong>JIT</strong> (just in time). e tem código aberto que pode ser modificado por qualquer pessoa e isto fez com que uma nova ferramenta chamada <strong>Node.js</strong> fosse criada em 2010 </p>
-        <p><strong>ECMAscript versões »</strong> 1.0 - 1997, 2.0 - 1998, 3.0 - 1999, ES5 - 2009, ES6 - 2015, ES - 2016, ES - 2017, ES - 2018</p>
-        <h2>Tecnoligias que usam o javascript:</h2> 
-        <p>
-            <br><img src="../jpeg/jquery.jpg" alt="Jguery" class="pequena">jQuery(mozzila)
-            <br><img src="../jpeg/angular.jpg" alt="Angular" class="pequena">Angular(google)
-            <br><img src="../jpeg/reacht.jpg" alt="Reacht" class="pequena">Reacht(facebook)
-            <br><img src="../jpeg/vue.jpg" alt="Vue" class="pequena">Vue(ex programar do google)
-            <br><img src="../jpeg/electron.jpg" alt="Electron" class="pequena">Electron(Github)
-            <br><img src="../jpeg/ionic.jpg" alt="Ionic" class="pequena">Ionic
-            <br><img src="../jpeg/cordova.jpg" alt="Cordova" class="pequena">Cordova
-            <br>observação: antes de estudar essas tecnologias aprenda javascript.
-        </p>
-        <p>Existem muitos jogos criados em javascript</p>
-        <h2>Questionario</h2>
-        <p>Qual empresa criou o javascript?</p>
-        <p>Java e Javascript possuem alguma relação?</p>
-        <p>O que ECMAScript tem a ver com JavaScript?</p>
-        <p>Sabia que o< programa Whatsapp desktop é criado em JavaScript?</p>
-    </section>
-
-<!--------------------------------------------------AULA03--------------------------------------------->
-
-    <p class="botao" onclick="visivel3()">Aula 03</p>
-    <section class="texto" id="aula03">
-        <h2>Dicas para o estudo correto!</h2>
-        <ul type="none">
-            <li>Assistir o vídeo</li>
-            <li>Treinar no computador</li>
-            <li>Ler manuais e referencias</li>
-            <li>Anotar tudo </li>
-            <li>Interagir com pessoas</li>
-            <li>Elaborar seus proprios projetos</li>
-        </ul>
-        <h2>Bibliografia</h2>
-        <ul type="none">
-            <li><img src="../jpeg/livro-js-guia-definitivo.jpg" alt="Livro guia definitivo" class="pequena">JavaScript o guia definitivo - David flanagan </li>
-            <li><img src="../jpeg/livro-js-guia-do-programador.jpg" alt="livro guia do programador" class="pequena">JavaScript guia do programador - Mauricio Samy Silva</li>
-            <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank">Mozilla - guia de referencia</a></li>
-            <li><a href="https://ecma-international.org/publications-and-standards/standards/ecma-262/">ECMA - guia de referencia</a></li>
-        </ul>
-    </section>
-   
-<!--------------------------------------------------AULA04--------------------------------------------->
-    <p class="botao" onclick="visivel4()">Aula 04</p>
-    <section class="texto" id="aula04">
-        <h2>Primeiros passos com VSCODE</h2>
-        <p>Organizar arquivos na pasta</p>
-        <p>Clique no link para acessar o 1º arquivo criado no VSCODE » <a href="../paginas/arq-001.html">Arquivo 001</a></p>
-        <p>Nesta aula é ensinado 3 comandos simplesem javascript. O comando Window.alert, Window.confirm e Window.prompt. O primeiro emite um alerta, o segundo pede a confirmação de uma pergunta e o terceiro Pede para digitar algo pedido.</p>
-        <img src="../jpeg/modulo-a-5.JPG" alt="comandos">
-    </section>
-
-    <script>
+    <main>
+        <h1>Módulo A</h1>
+        <p class="botao" onclick="visivel1()">Aula 01</p>
+        <section class="texto" id="aula01">
+            <h2>Conceito: Cliente x Servidor</h2>
+            <img src="../jpeg/cliente x servidor 1.JPG" alt="HTML-CSS-JS">
+            <p>Javascript funciona muito mais do lado do cliente</p>
+            <h2>Construção de um web site</h2>
+            <p>Necessário 3 profissionais</p>
+            <ul type="none">
+                <li>Jornalista = Conteúdo = HTML</li>
+                <li>Designer = Estilo = CSS</li>
+                <li>Programador = Interação = JS</li>
+            </ul>
+            <img src="../jpeg/modulo-a-2.JPG" alt="">
+            <h2>Desabilitar JS em sites</h2>
+            <p>Vá até o DEVTOOLS > configurações > Disable JS</p>
+            <img src="../jpeg/modulo-a-3.JPG" alt="Devtools">
+            <h2>Modificar sites que usam JS</h2>
+            <img src="../jpeg/modulo-a-4.jpg" alt="Devtools">
+            <ul type="none">
+                <li>1.Para pegar o nome</li>
+                <li>2.Local para fazer as modificações</li>
+                <li>3.Local para digitar o código</li>
+            </ul>
+            <p>Para alterar a cor do fundo do goole é necessário abrir o devtools, entrar em console e digitar: <strong>document.body.style.background = 'black'</strong>. Isso quer dizer o estilo(style) da cor do fundo(background) do corpo(body) do documento(document) é = preta('black') </p>
+            <p>Digitando <strong>alert('texto qualquer')</strong> o site envia uma notificação</p>
+            <p>Digitando <strong>document.querySelector('nome').style.filter ='grayscale(100%)</strong>. Esse codigo vai deixar a imagem em branco e preto.</p>
+            <p>Digitando <strong>document.querySelector('nome').style.visibility = 'hidden'</strong>. Vai esconder a imagem</p>
+            <p>Digitando <strong>documento.querySelector('nome').innerText = 'Digite o seu texto'</strong>. Vai alterar o texto da manchete</p>
+            <p><strong>Observação:</strong> Essas alterações alteram apenas o javascript que já chegou em sua maquina. Não interfere na plataforma do site, ou seja, outras pessoas que estão acesando o site não veem essa modificação</p>
+            <h2>Questionario</h2>
+            <p>Sabe a diferença entre um cliente e um servidor?</p>
+            <p>Para que serve HTML, CSS e javaScript</p>
+            <p>Cite 4 sites que fazem uso do JS</p>
+        </section>
+        
+        <!--------------------------------------------------AULA02--------------------------------------------->
+        <p class="botao" onclick="visivel2()">Aula 02</p>
+        <section class="texto" id="aula02" >
+            <h2>A evolução do JavaScript</h2>
+            <p> Em meados de <strong>1960</strong> <strong>D. Eisenhower(EUA)</strong> desenvolveu uma agencia de tecnologia » <strong>DARPA</strong> </p>
+            <p> A ideia da <strong>DARPA</strong> foi criar uma rede para proteger os dados caso o local em que eles estivessem fossem atacados pela <strong>URSS</strong></p>
+            <p>A rede criada pela <strong>DARPA</strong> recebeu o nome de <strong>ARPANET</strong>, protegida pelos militares inicialmente, mas com a sua grande expansão e conexão com outras pequenas redes ela passou a se chamar de <strong>internet</strong>.</p>
+            <p>Em <strong>1993</strong> em Genebra, <strong>Timothy Berners-Lee(CERN)</strong> foi responsavel pela tecnologia <strong>HTML</strong>, protocolo <strong>HTTP</strong> que se juntou ao conjunto de protocolos <strong>TCP/IP</strong> e também fundou a World Wide Web (WWW). </p>
+            <p>Neste mesmo ano foi criado nos <strong>EUA</strong> o <strong>Mosaic</strong> (navegador), criado pelo centro nacional de aplicações de supercomputadores (<strong>NCSA</strong>), pelo pesquisador <strong>Marc Andreesen</strong>. Depois de sair da <strong>NCSA</strong> ele se juntou com <strong>Jim Clark</strong> e fundaram uma empresa chamada <strong>Netscap</strong> e criaram o navegador superior, baseado do <strong>godzilla</strong>.</p>
+            <p>Em <strong>1995</strong> Brandon Erich se juntou  Netscap e estava criando uma linguagem chamada <strong>Moca</strong> ou <strong>livescript</strong>, mas ao memso tempo outra linguagem estava tendo maior visibilidade, a liguagem <strong>JAVA</strong>, com isso o nome moca/livescript foi alterado para <strong>javascript</strong>, pois o nome <strong>JAVA</strong> estava em alta.</p>
+            <p>A liguagem <strong>javascript</strong> fez bastante sucesso e a <strong>Microsoft</strong> criou sua propria liguagem <strong>JScript</strong> e seu navegador <strong>Internet Explorer</strong>. A <strong>netscap</strong> resolveu padronizar a liguagem para não virar baçunça, com isso procurou a <strong>ECMA(EUR)</strong> e surgiu a linguagem <strong>javascript</strong>, que é uma padronização da liguagem.</p>
+            <p>Em 2002 encerrou a briga entre <strong>Netscap</strong> e <strong>Microsoft</strong>. Devido a <strong>Microsoft</strong> fornecer nagebador com a liguagem a netscap acabou falindo e se tornou o <strong>Mozilla Firefox</strong>, mas não conseguiu ter muito espaço devido a ascensão do <strong>Google Chrome</strong> que é o navegador mais famoso do mundo devido ao seu motor que faz rodar o <strong>javascript</strong>, conhecido como <strong>V8</strong> que gera codigo <strong>JIT</strong> (just in time). e tem código aberto que pode ser modificado por qualquer pessoa e isto fez com que uma nova ferramenta chamada <strong>Node.js</strong> fosse criada em 2010 </p>
+            <p><strong>ECMAscript versões »</strong> 1.0 - 1997, 2.0 - 1998, 3.0 - 1999, ES5 - 2009, ES6 - 2015, ES - 2016, ES - 2017, ES - 2018</p>
+            <h2>Tecnoligias que usam o javascript:</h2>
+            <p>
+                <br><img src="../jpeg/jquery.jpg" alt="Jguery" class="pequena">jQuery(mozzila)
+                <br><img src="../jpeg/angular.jpg" alt="Angular" class="pequena">Angular(google)
+                <br><img src="../jpeg/reacht.jpg" alt="Reacht" class="pequena">Reacht(facebook)
+                <br><img src="../jpeg/vue.jpg" alt="Vue" class="pequena">Vue(ex programar do google)
+                <br><img src="../jpeg/electron.jpg" alt="Electron" class="pequena">Electron(Github)
+                <br><img src="../jpeg/ionic.jpg" alt="Ionic" class="pequena">Ionic
+                <br><img src="../jpeg/cordova.jpg" alt="Cordova" class="pequena">Cordova
+                <br>observação: antes de estudar essas tecnologias aprenda javascript.
+            </p>
+            <p>Existem muitos jogos criados em javascript</p>
+            <h2>Questionario</h2>
+            <p>Qual empresa criou o javascript?</p>
+            <p>Java e Javascript possuem alguma relação?</p>
+            <p>O que ECMAScript tem a ver com JavaScript?</p>
+            <p>Sabia que o< programa Whatsapp desktop é criado em JavaScript?</p>
+        </section>
+        
+        <!--------------------------------------------------AULA03--------------------------------------------->
+        <p class="botao" onclick="visivel3()">Aula 03</p>
+        <section class="texto" id="aula03">
+            <h2>Dicas para o estudo correto!</h2>
+            <ul type="none">
+                <li>Assistir o vídeo</li>
+                <li>Treinar no computador</li>
+                <li>Ler manuais e referencias</li>
+                <li>Anotar tudo </li>
+                <li>Interagir com pessoas</li>
+                <li>Elaborar seus proprios projetos</li>
+            </ul>
+            <h2>Bibliografia</h2>
+            <ul type="none">
+                <li><img src="../jpeg/livro-js-guia-definitivo.jpg" alt="Livro guia definitivo" class="pequena">JavaScript o guia definitivo - David flanagan </li>
+                <li><img src="../jpeg/livro-js-guia-do-programador.jpg" alt="livro guia do programador" class="pequena">JavaScript guia do programador - Mauricio Samy Silva</li>
+                <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank">Mozilla - guia de referencia</a></li>
+                <li><a href="https://ecma-international.org/publications-and-standards/standards/ecma-262/">ECMA - guia de referencia</a></li>
+            </ul>
+        </section>
+        
+        <!--------------------------------------------------AULA04--------------------------------------------->
+        <p class="botao" onclick="visivel4()">Aula 04</p>
+        <section class="texto" id="aula04">
+            <h2>Primeiros passos com VSCODE</h2>
+            <p>Organizar arquivos na pasta</p>
+            <p>Clique no link para acessar o 1º arquivo criado no VSCODE » <a href="../paginas/arq-001.html">Arquivo 001</a></p>
+            <p>Nesta aula é ensinado 3 comandos simplesem javascript. O comando Window.alert, Window.confirm e Window.prompt. O primeiro emite um alerta, o segundo pede a confirmação de uma pergunta e o terceiro Pede para digitar algo pedido.</p>
+            <img src="../jpeg/modulo-a-5.JPG" alt="comandos">
+        </section>
+    </main>
+        
+        <script>
         function clickMenu(){
             if (itens.style.display == 'block'){
                 itens.style.display = 'none'}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/arquivos.css">
+    <title>Arquivo 08</title>
+</head>
+<body>
+    <p class="botao"><a href="../modulos/modulo-c.html">Voltar</a></p>
+    <section class="texto">
+     <h1>Sistema de multas</h1>
+     <label for="ivelocidade">Velocidade: </label>
+     <input type="number" name="velocidade" id="ivelocidade">
+     <input type="button" value="Calcular" onclick="calcular()">
+     <div id="res">Resultado</div>
+
+    </section>
+<!--------------------------------------------- SCRIPT ------------------------------------------------>
+
+    <script>
+        function calcular(){
+            var texto_velocidade = document.getElementById('ivelocidade')
+            var velocidade = Number(texto_velocidade.value)
+            var resultado = document.getElementById('res')
+
+            res.innerHTML = `Sua velocidade é ${velocidade}km/h! <br>`
+
+            if( velocidade > 60){
+                resultado.innerHTML += `Utrapassou a velocidade permitida de 60km/h` 
+            } else{ resultado.innerHTML += `Esta dentro do limite de velocidade`}
+        }
+
+    </script>
+    
+</body>
+</html>

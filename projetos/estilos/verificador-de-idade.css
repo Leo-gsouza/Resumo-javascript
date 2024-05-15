@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    text-align: center;
+    margin: 30px 5px ;
+}
+
+header > h1{
+    color: white;
+    margin-top: 80px;
+}
+
+body{
+    background: url('../imagens/dia-desfoque.jpg') top center no-repeat fixed;
+    background-size: cover;
+}
+
+section {
+    display: block;
+    margin: auto;
+    width: 310px;
+
+    background-color: darkslateblue;
+    color: white;
+    border: 3px solid lightblue;
+    border-radius: 15px;
+
+    padding: 14px;
+}
+
+label{
+    font-size: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+input[type='number']{
+    font-size: 1.1em;
+    text-align: center;
+    width: 50px;
+    padding: 5px;
+}
+
+input[type='radio']{
+    margin: 5px;
+    background-color: 
+}
+
+input[type='button']{
+    display: block;
+    width: 120px;
+    height: 40px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    border: 3px solid yellow;
+    background-color: white;
+    border-radius: 10px;
+
+    font-variant: small-caps;
+    font-size: 1.1em;
+}
+
+div#res{
+    text-align: center;
+    padding: 10px;
+}
+
+div#foto{
+    display: none;
+} 
+
+img#imagem{
+    display: block;
+    margin: auto;
+    width: 220px;
+    margin-top: 10px;
+}
