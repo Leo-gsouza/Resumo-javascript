@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/media-quieres.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,120..700,0..1,-50..200" />
+    <title>Modulo E</title>
+</head>
+<body>
+    <header>
+        <h1>Curso de JavaScript</h1>
+    </header>
+    <i class="material-symbols-outlined" id="list" onclick="clickMenu()">list</i>
+    <menu id="itens">
+        <ul type="none">
+            <li><a href="../index.html">Página Inicial</a></li>
+            <li><a href="../modulos/modulo-a.html">Módulo A</a></li>
+            <li><a href="../modulos/modulo-b.html">Módulo B</a></li>
+            <li><a href="../modulos/modulo-c.html">Módulo C</a></li>
+            <li><a href="../modulos/modulo-d.html">Módulo D</a></li>
+            <li class="ativo"><a href="../modulos/modulo-e.html">Módulo E</a></li>
+            <li><a href="#">Módulo F</a></li>
+            <li><a href="../modulos/exercicios.html">Exercicios</a></li>
+        </ul>
+    </menu>
+    <!---------------------------------------------AULA 13--------------------------------------------->
+    
+    <main>
+    <h1>Módulo E</h1>
+    <p class="botao" onclick="visivel_01()">Aula13</p>
+        <section class="texto" id="um">
+            <h2>Repetições</h2>
+            <img src="../jpeg/modulo-e-1.JPG" alt="repetição while">
+            <pre>
+                <code>
+var fatia = 16
+
+function comerPizza(fatia){
+    while (fatia > 0){
+        console.log('comendo uma fatia hum.....')
+        fatia -=1
+        console.log (`Restam ${fatia} fatias`)
+    }
+    console.log('Acabou! Delicia')
+}
+
+console.log(comerPizza(16))
+                </code>
+            </pre>
+            <img src="../jpeg/modulo-e-2.JPG" alt="duas estruturas">
+
+            <p>1ª estrutura » Primeiro faz o teste e depois executa o bloco. <strong class="com">while</strong>(variavel >= 5){executando o bloco até a variavel ser maior do que 5} chamada de estrutura de repetição com teste logico no inicio  </p>
+            <p>2ª estrutura » primeiro executa o bloco e depois faz o teste. <strong class="com">Do</strong>{executando o bloco até a variavel ser maior do que 5} <strong class="com">while</strong> (variavel >= 5)</p>
+            <p>Resumindo com minhas palavras: A primeira estrutura vai realizar a condição, exemplo: Vai ver o valor da variavel ,que para exemplificar é 0, e realizara o teste logico = enquanto 0 menor ou igual a 5 faça o bloco. No segundo caso sera realizado o bloco primeiro, bloco executado e em seguida é realizado teste logico, 0 menor ou igual a 5, caso seja ele retonar e faz o bloco. A diferença entre os dois metodos é que um inicia com a logica e depois executa o bloco e o outro executa o bloco e depois faz a logica para ver se o bloco sera executado novamente, ou seja, na segunda estrutura o bloco sempre será executado pelo menos uma vez mesmo que a codição seja FALSE </p>
+
+        </section>
+        <!---------------------------------------Aula 14----------------------------------------------->
+        <p class="botao" onclick="visivel_02()">Aula 14 </p>
+        <section class="texto" id="dois">
+            <h2>Estrutura FOR</h2>
+            <img src="../jpeg/modulo-e-3.JPG" alt="Estrutura for">
+            <p>A estrutura FOR tem 3 partes, sendo elas (inicio; teste;incremento ) </p>
+            <img src="../jpeg/modulo-e-4.JPG" alt="estrutura for vscode">
+            <h2>DEBUG</h2>
+            <img src="../jpeg/modulo-e-5.JPG" alt="Debug console">
+            <p>Depuração » 1 - Clicar em RUN  na aba superioor do vs code e depois em START DEBUGGING(F5). <br>2 - Escolher com o mouse a linha do codigo que será iniciado o debugging. <br>3- Com terminal aberto escolher a aba DEBUG CONSOLE - <br>4 na caixa de digitaçãousar a tecla F10 para dar sequencia do passo a passo no codigo </p>
+        </section>
+    </main>
+
+    <!---------------------------------------  SCRIPT  ----------------------------------------------->
+    
+    <script src="../scripts/modulo-e.js"></script>
+
+
+</body>
+</html>

@@ -39,6 +39,26 @@ section {
     padding: 14px;
 }
 
+div#voltar > a{
+    display: block;
+    margin: auto;
+    margin-bottom: 12px;
+    width: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+
+    background-color: darkgray;
+    border: 2px solid white;
+    border-radius: 7px;
+    color:  white;
+    box-shadow: 0px 0px 10px white;
+
+
+
+}
+
 label{
     font-size: 1em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
