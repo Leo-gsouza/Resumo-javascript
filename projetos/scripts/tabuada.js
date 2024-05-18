@@ -7,14 +7,17 @@ function calcular(){
     var calculos = ''
 
     resultado.style.display = 'block'
-    while (cont <= 10){
-        if (cont < 10){
-            calculos += `<p> ${valor} x 0${cont} = ${valor*cont}</p>`
-            cont ++
-        }else{calculos += `<p> ${valor} x ${cont} = ${valor*cont}</p>`
-        cont ++}
-    }
 
-    resultado.innerHTML = calculos
+    if (valor == ''){
+        window.alert('Insira um valor!')
+        resultado.style.display = 'none'
+    }else {while (cont <= 10){
+        if (cont < 10){
+            calculos += `<p>${valor} x 0${cont} = ${valor*cont}</p>`
+            cont ++
+        }else{calculos += `<p>${valor} x ${cont} = ${valor*cont}</p>`
+        cont ++}
+        resultado.innerHTML = calculos
+    }}   
     
 }

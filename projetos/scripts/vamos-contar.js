@@ -12,8 +12,23 @@ function calcular(){
     resultado.style.display = 'block'
     resultado.style.textAlign = 'center'
 
+    if (passo < 1 && passo == ''){
+        window.alert('passo vazio ou menor que 1 recebe o valor = 1')
+        passo = 1
+    }
+
+    if (inicio == ''){
+        window.alert('Inicio vazio = 0')
+        inicio = 0
+    }
+
+    if (fim == ''){
+        window.alert('Fim vazio = 50')
+        fim = 50
+    }
+
     if(fim < inicio){
-        window.alert('O Inicio não pode ser menor que o fim!')
+        window.alert('O Inicio não pode ser maior que o fim!')
         
     }else{calculos += 'Inicio'
     for (inicio ; inicio <= fim; inicio+=passo)
