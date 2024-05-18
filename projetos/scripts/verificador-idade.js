@@ -11,7 +11,7 @@ function verificar(){
     var img = document.getElementById('imagem')
     var caixa = document.getElementById('caixa')
     var titulo = document.getElementById('titulo')
-    
+    var voltar = document.getElementById('voltar')
 
     /* VERIFICAÇÃO DE ERRO DE DIGITAÇÃO DO USUARIO */
     if (anoNascTx.value.length == 0){
@@ -25,6 +25,7 @@ function verificar(){
             caixa.style.color = 'white'
             titulo.style.color = 'transparent'
             titulo.style.textShadow = 'none'
+            voltar.style.display = 'none'
             if (idade >= 0 && idade <= 2){
                 img.src = '../imagens/pessoa1.png'
                 genero = 'bebe'
@@ -52,7 +53,7 @@ function verificar(){
             document.body.style.backgroundImage = "url('../imagens/fundo-mulher.jpg')"
             titulo.style.color = 'transparent'
             titulo.style.textShadow = 'none'
-
+            voltar.style.display ='none'
             if (idade <= 2){
                 img.src = '../imagens/mulher1.png'
                 genero = 'bebe'

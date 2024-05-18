@@ -4,10 +4,17 @@ function calcular(){
     var valor = Number(valorTxt.value)
     var resultado = document.getElementById('res')
     var cont = 1
+    var calculos = ''
+
+    resultado.style.display = 'block'
     while (cont <= 10){
-        resultado.innerHTML += `${valor} x ${cont} = ${valor*cont}`
-        resultado.innerHTML += '\r\n'
-        cont ++
+        if (cont < 10){
+            calculos += `<p> ${valor} x 0${cont} = ${valor*cont}</p>`
+            cont ++
+        }else{calculos += `<p> ${valor} x ${cont} = ${valor*cont}</p>`
+        cont ++}
     }
+
+    resultado.innerHTML = calculos
     
 }
