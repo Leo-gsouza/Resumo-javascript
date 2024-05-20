@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/triangulo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header >
+        <h1 id="cabeça">Triangulo</h1>
+    </header>
+    <section>
+        <div id="foto">
+            <img src="../imagens/branco.JPG" alt="imagem branca" id="imagem">
+        </div>
+        <div id="input">
+            <label for="lado-a">Lado A:</label>
+            <input type="number" name="lado" id="lado-a"><br>
+            <label for="lado-b">Lado B:</label>
+            <input type="number" name="lado" id="lado-b"><br>
+            <label for="lado-c">Lado C:</label>
+            <input type="number" name="lado" id="lado-c"><br>
+            <input type="button" value="Calcular" id="botao" onclick="calcular()">
+        </div>
+        <div id="res"></div>
+    </section>
+    <script src="../scripts/triangulo.js"></script>
+</body>
+</html>

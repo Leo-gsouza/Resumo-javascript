@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    background: black url('../imagens/triangulo.jpg') bottom center no-repeat fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+header > h1#cabeça{
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 5px black;
+    padding: 20px;
+
+    background-color: gray;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.623);
+    color: white;
+}
+
+
+section > div#foto{
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+div#foto img#imagem{
+    display: none;
+    width: 200px;
+}
+
+section > div#input{
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+
+    background-color: white;
+    border: 3px solid darkred;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
+}
+
+label{
+    display: inline-block;
+    width: 80px;
+    font-size: 1.3em;
+    padding: 4px 2px;
+}
+
+input[type='number']{
+    display: inline-block;
+    width: 60px;
+    padding: 4px 2px;
+    font-size: 1.2em;
+    margin: 3px;
+
+    background-color: rgb(248, 248, 248);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.308);
+}
+
+input[type='button']{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    width: 130px;
+    padding: 8px;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
+
+    border-radius: 5px;
+
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+div#res{
+    width: 220px;
+    display: none;
+    margin: auto;
+    margin-top: 20px;
+    background-color: darkred;
+
+    padding: 15px;
+    color: white;
+
+    border-radius: 8px;
+    border: 2px solid red;
+}
+
+div#res > h1{
+    font-size: 1.7em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div#res > p{
+    text-align: center;
+    font-size: 1.3em;
+    font-family: monospace;
+
+    padding: 8px 5px;
+}
+

@@ -49,7 +49,7 @@ label{
 }
 
 input[type='number']{
-    width: 50px;
+    width: 60px;
     margin: 5px;
     padding: 5px;
 
@@ -80,11 +80,26 @@ div#res{
     display: none;
     margin: auto;
     margin-top: 15px;
-    width: 70px;
+    width: 200px;
     padding: 15px;
     font-size: 1.4em;
     text-transform: uppercase;
 
     background-color: lightcyan;
     border: 3px solid darkslategrey;
+}
+
+div#res > h1{
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+div#res > p#number{
+    display: inline-block;
+    font-size: 0.9em;
+    width: 50px;
+    padding: 4px;
+    margin: 2px;
+    background-color: white;
+    border: 2px solid darkslategrey;
 }
