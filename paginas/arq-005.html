@@ -8,10 +8,10 @@
     <title>Arquivo 05</title>
 </head>
 <body>
-    <p class="botao"><a href="../modulos/modulo-c.html">Voltar</a></p>
+    <a href="../modulos/modulo-c.html" class="voltar">Voltar</a>
     <section class="texto">
         <h2>Iniciando estudos DOM</h2>
-        <p>Aqui vai o resultado</p>
+        <p>1ª TAG P. ou seja, o getByelementTagName('p')[0] vai escrever o que estiver aqui dentro</p>
         <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
         <div id="clicar">Clique em mim</div>
         <p>Clique em mim foi criado com javascript usando o seguinte comando:</p>
@@ -38,11 +38,12 @@ script
         <img src="../jpeg/modulo-c-2.JPG" alt="script">
         <h2 id="select">Por Selector</h2>
         <p>é recomendada pelos manuais. Faz a seleção por CSS </p>
+        <p>O titulo acima Selector teve a usa cor alterada por javascript usando o comando abaixo</p>
         <pre>
             <code>
 script
 var selector = window.document.querySelector('h2#select')
-selector.style.color = 'yellow'
+selector.style.color = 'darkslategray'
 script
             </code>
         </pre>
@@ -56,12 +57,15 @@ script
         window.document.write(`Está escrito assim: ${p1.innerText}`)
         /* POR ID » Id criado na TAG */
         var indentificador = window.document.getElementById('clicar')
-        indentificador.style.background = 'lightblue'
-        indentificador.style.color = 'black'
+        indentificador.addEventListener('mouseenter', entrou)
         /* Por querySelector */
         var selector = window.document.querySelector('h2#select')
-        selector.style.color = 'yellow'
+        selector.style.color = 'darkslategray'
         
+        function entrou(){
+            indentificador.style.background = 'darkred'
+            indentificador.style.fontSize = '1.1em'
+        }
 
     </script>
     

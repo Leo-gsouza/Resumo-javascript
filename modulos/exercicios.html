@@ -11,25 +11,27 @@
 <body>
     <header>
         <h1>Curso de JavaScript</h1>
+        <i class="material-symbols-outlined" id="list" onclick="clickMenu()">list</i>
     </header>
-    <a href="../index.html"><i class="material-symbols-outlined" id="list" onclick="clickMenu()">Arrow_Back_iOS_New</i></a>
     <menu id="itens">
         <ul>
-            <li><a href="../index.html">Página Inicial</a></li>
-            <li><a href="../modulos/modulo-a.html">Módulo A</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li ><a href="../modulos/modulo-a.html">Módulo A</a></li>
             <li><a href="../modulos/modulo-b.html">Módulo B</a></li>
             <li><a href="../modulos/modulo-c.html">Módulo C</a></li>
             <li><a href="../modulos/modulo-d.html">Módulo D</a></li>
             <li><a href="../modulos/modulo-e.html">Módulo E</a></li>
             <li><a href="#">Módulo F</a></li>
             <li class="ativo"><a href="../modulos/exercicios.html">Exercicios</a></li>
+            <li><a href="../projetos/index.html">Projetos</a></li>
+
         </ul>
     </menu>
     
     <!----------------------------------------------AULA01--------------------------------------------->
 
-    <h1>Exercicios</h1>
     <main>
+        <h1>Exercicios</h1>
         <section class="texto" style="display: block;">
             <p>1 - Criar um programa que leia o Pais em que o usuario vive e diga se ele é brasileiro ou estrangeiro. <a href="../jpeg/ex1.pdf" download="ex1.pdf" type="application/pdf" target="_blank" >Acessar o código</a></p>
             <form action="">Nacionalidade
@@ -48,16 +50,6 @@
         </section>
     </main>
 
-    <script>
-    function enviar(){
-        var ipais = document.getElementById('ipais')
-        var pais = String(ipais.value)
-        var resultado = document.getElementById('res')
-
-        if(pais == 'Brasil'){
-            resultado.innerHTML = `Você é brasileiro`} 
-        else{resultado.innerHTML = `Você é estrangeiro`}
-    }
-    </script>
+    <script src="../scripts/modulo-e.js"></script>
 </body>
 </html>

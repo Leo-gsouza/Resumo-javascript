@@ -22,7 +22,7 @@
             <li><a href="../modulos/modulo-c.html">Módulo C</a></li>
             <li><a href="../modulos/modulo-d.html">Módulo D</a></li>
             <li><a href="../modulos/modulo-e.html">Módulo E</a></li>
-            <li><a href="#">Módulo F</a></li>
+            <li><a href="../modulos/modulo-f.html">Módulo F</a></li>
             <li><a href="../modulos/exercicios.html">Exercicios</a></li>
             <li><a href="../projetos/index.html">Projetos</a></li>
 
@@ -33,8 +33,8 @@
 
     <main>
         <h1>Módulo A</h1>
-        <p class="botao" onclick="visivel1()">Aula 01</p>
-        <section class="texto" id="aula01">
+        <p class="botao" onclick="visivel_01()">Aula 01</p>
+        <section class="texto" id="um">
             <h2>Conceito: Cliente x Servidor</h2>
             <img src="../jpeg/cliente x servidor 1.JPG" alt="HTML-CSS-JS">
             <p>Javascript funciona muito mais do lado do cliente</p>
@@ -58,9 +58,9 @@
             </ul>
             <p>Para alterar a cor do fundo do goole é necessário abrir o devtools, entrar em console e digitar: <strong>document.body.style.background = 'black'</strong>. Isso quer dizer o estilo(style) da cor do fundo(background) do corpo(body) do documento(document) é = preta('black') </p>
             <p>Digitando <strong>alert('texto qualquer')</strong> o site envia uma notificação</p>
-            <p>Digitando <strong>document.querySelector('nome').style.filter ='grayscale(100%)</strong>. Esse codigo vai deixar a imagem em branco e preto.</p>
-            <p>Digitando <strong>document.querySelector('nome').style.visibility = 'hidden'</strong>. Vai esconder a imagem</p>
-            <p>Digitando <strong>documento.querySelector('nome').innerText = 'Digite o seu texto'</strong>. Vai alterar o texto da manchete</p>
+            <p>Digitando <strong>document.querySelector('nome') .style.filter ='grayscale(100%)</strong>. Esse codigo vai deixar a imagem em branco e preto.</p>
+            <p>Digitando <strong>document.querySelector('nome') .style.visibility = 'hidden'</strong>. Vai esconder a imagem</p>
+            <p>Digitando <strong>documento.querySelector('nome') .innerText = 'Digite o seu texto'</strong>. Vai alterar o texto da manchete</p>
             <p><strong>Observação:</strong> Essas alterações alteram apenas o javascript que já chegou em sua maquina. Não interfere na plataforma do site, ou seja, outras pessoas que estão acesando o site não veem essa modificação</p>
             <h2>Questionario</h2>
             <p>Sabe a diferença entre um cliente e um servidor?</p>
@@ -69,8 +69,8 @@
         </section>
         
         <!--------------------------------------------------AULA02--------------------------------------------->
-        <p class="botao" onclick="visivel2()">Aula 02</p>
-        <section class="texto" id="aula02" >
+        <p class="botao" onclick="visivel_02()">Aula 02</p>
+        <section class="texto" id="dois" >
             <h2>A evolução do JavaScript</h2>
             <p> Em meados de <strong>1960</strong> <strong>D. Eisenhower(EUA)</strong> desenvolveu uma agencia de tecnologia » <strong>DARPA</strong> </p>
             <p> A ideia da <strong>DARPA</strong> foi criar uma rede para proteger os dados caso o local em que eles estivessem fossem atacados pela <strong>URSS</strong></p>
@@ -101,8 +101,8 @@
         </section>
         
         <!--------------------------------------------------AULA03--------------------------------------------->
-        <p class="botao" onclick="visivel3()">Aula 03</p>
-        <section class="texto" id="aula03">
+        <p class="botao" onclick="visivel_03()">Aula 03</p>
+        <section class="texto" id="tres">
             <h2>Dicas para o estudo correto!</h2>
             <ul type="none">
                 <li>Assistir o vídeo</li>
@@ -122,8 +122,8 @@
         </section>
         
         <!--------------------------------------------------AULA04--------------------------------------------->
-        <p class="botao" onclick="visivel4()">Aula 04</p>
-        <section class="texto" id="aula04">
+        <p class="botao" onclick="visivel_04()">Aula 04</p>
+        <section class="texto" id="quatro">
             <h2>Primeiros passos com VSCODE</h2>
             <p>Organizar arquivos na pasta</p>
             <p>Clique no link para acessar o 1º arquivo criado no VSCODE » <a href="../paginas/arq-001.html">Arquivo 001</a></p>
@@ -132,36 +132,6 @@
         </section>
     </main>
         
-        <script>
-        function clickMenu(){
-            if (itens.style.display == 'block'){
-                itens.style.display = 'none'}
-            else{itens.style.display = 'block'}
-        }
-
-        function visivel1(){
-            if (aula01.style.display == 'block'){
-                aula01.style.display = 'none'}
-            else{aula01.style.display ='block'}
-        }
-
-        function visivel2(){
-            if (aula02.style.display == 'block'){
-                aula02.style.display ='none'}
-            else{aula02.style.display ='block'}
-        }
-
-        function visivel3(){
-            if (aula03.style.display == 'block'){
-                aula03.style.display ='none'}
-            else{aula03.style.display ='block'}
-        }
-
-        function visivel4(){
-            if (aula04.style.display == 'block'){
-                aula04.style.display = 'none'}
-            else{aula04.style.display = 'block'}
-        }
-    </script>
+        <script src="../scripts/modulo-e.js"></script>
 </body>
 </html>

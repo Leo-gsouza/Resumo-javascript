@@ -22,3 +22,10 @@ function visivel_03(){
         tres.style.display = 'none'
     }else{tres.style.display = 'block'}
 }
+
+function visivel_04(){
+    if(quatro.style.display == 'block'){
+        quatro.style.display = 'none'
+    }else{quatro.style.display = 'block'}
+}
+
