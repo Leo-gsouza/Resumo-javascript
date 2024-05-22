@@ -16,3 +16,9 @@ function visivel_02(){
         dois.style.display = 'none'
     }else{dois.style.display = 'block'}
 }
+
+function visivel_03(){
+    if (tres.style.display == 'block'){
+        tres.style.display = 'none'
+    }else{tres.style.display = 'block'}
+}

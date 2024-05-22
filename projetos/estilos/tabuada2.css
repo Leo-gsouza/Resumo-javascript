@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+section{
+    width: 280px;
+    margin: auto;
+
+    padding: 10px;
+
+    font-size: 1.5em;
+}
+
+p > input[type='number']{
+    width: 60px;
+
+    font-size: 0.8em;
+    text-align: center;
+
+    padding: 5px;
+    margin: 5px 10px;
+}
+
+p > input[type='button']{
+    width: 80px;
+
+    padding: 5px;
+    font-size: 0.8em;
+
+}
+
+select{
+    display: none;
+    border: none;
+}
+
+option{
+    width: 260px;
+    
+    padding: 5px;
+    
+    text-align: center;
+    font-size: 1.4em;
+
+    background-color: darkred;
+    color: white;
+    border: 2px solid white;
+    box-shadow: inset 0px 0px 10px white;
+}
+
+footer{
+    text-align: center;
+
+    padding: 10px;
+}
