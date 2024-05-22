@@ -8,7 +8,7 @@
     <title>Arquivo 08</title>
 </head>
 <body>
-    <p class="botao"><a href="../modulos/modulo-c.html">Voltar</a></p>
+    <a href="../modulos/modulo-c.html" class="voltar">Voltar</a>
     <section class="texto">
      <h1>Sistema de multas</h1>
      <label for="ivelocidade">Velocidade: </label>
@@ -25,11 +25,12 @@
             var velocidade = Number(texto_velocidade.value)
             var resultado = document.getElementById('res')
 
-            res.innerHTML = `Sua velocidade é ${velocidade}km/h! <br>`
+            resultado.innerHTML = `<h1>${velocidade} Km</h1>`
+            resultado.innerHTML += `<p>Sua velocidade é ${velocidade}km/h!</p><br>`
 
             if( velocidade > 60){
-                resultado.innerHTML += `Utrapassou a velocidade permitida de 60km/h` 
-            } else{ resultado.innerHTML += `Esta dentro do limite de velocidade`}
+                resultado.innerHTML += `<p>Utrapassou a velocidade permitida de 60km/h</p>` 
+            } else{ resultado.innerHTML += `<p>Esta dentro do limite de velocidade</p>`}
         }
 
     </script>

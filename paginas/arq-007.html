@@ -8,39 +8,61 @@
     <title>Arquivo 07</title>
 </head>
 <body>
-    <p class="botao"><a href="../modulos/modulo-c.html">Voltar</a></p>
+    <a href="../modulos/modulo-c.html" class="voltar">Voltar</a>
     <section class="texto">
         <h1>Somando valores</h1>
-        <label for="txtn1">1º Valor: </label>
-        <input type="number" name="txtn1" id="txtn1"  onmouseenter="entrou()" onmouseout="saiu()"><br>
+        <label for="valor1Tx">1º Valor: </label>
+        <input type="number" name="valor1" id="valor1Tx"><br>
         <label for="txtn2">2º Valor:</label>
-        <input type="number" name="txtn2" id="txtn2"><br>
+        <input type="number" name="valor2" id="valor2Tx"><br>
         <label for="txtn3">3º Valor:</label>
-        <input type="number" name="txtn3" id="txtn3"><br>
-        <input type="button" value="Somar" onclick="somar()">
+        <input type="number" name="valor3" id="valor3Tx"><br>
+
+        <div class="opcao">
+            <input type="radio" name="operacao" id="somar">
+            <label for="somar" class="radio">Somar</label><br>
+            <input type="radio" name="operacao" id="subtrair">
+            <label for="somar" class="radio">Subtrair</label><br>
+            <input type="radio" name="operacao" id="multiplicar">
+            <label for="somar" class="radio">multiplicar</label><br>
+            <input type="radio" name="operacao" id="dividir">
+            <label for="somar" class="radio">dividir</label>
+        </div>
+
+        <input type="button" value="Calcular" onclick="calcular()">
+
         <div id="res">
-            Resultado
+            <p>Soma dos valores</p>
         </div>
     </section>
 <!--------------------------------------------- SCRIPT ------------------------------------------------>
 
     <script>
-        var tn1 = window.document.getElementById('txtn1')
-        var tn2 = window.document.querySelector('input#txtn2')
-        var tn3 = window.document.getElementById('txtn3')
+        var tx1 = window.document.getElementById('valor1Tx')
+        var tx2 = window.document.getElementById('valor2Tx')
+        var tx3 = window.document.getElementById('valor3Tx')
         var res = window.document.getElementById('res')
+        var opcao = document.getElementsByName('operacao')
 
-        tn2.addEventListener('mouseenter',  entrou2)
-        tn2.addEventListener('mouseout', saiu2)
-        tn2.addEventListener('mousedown', segurou2)
+     
+        function calcular(){
+            var valor1 = Number(tx1.value)
+            var valor2 = Number(tx2.value)
+            var valor3 = Number(tx3.value)
 
-        
-        function somar(){
-            var n1 = Number(tn1.value)
-            var n2 = Number(tn2.value)
-            var n3 = Number(tn3.value)
-            var soma = n1 + n2 + n3
-            res.innerHTML = soma
+            if(opcao[0].checked){
+                let somar = valor1 +  valor2 + valor3
+                res.innerHTML = `<h1>${somar}</h1>`
+            }else if (opcao[1].checked){
+                let subtrair = valor1 - valor2 - valor3
+                res.innerHTML = `<h1>${subtrair}</h1>`
+            }else if(opcao[2].checked){
+                let multiplicacao = valor1 * valor2 * valor3
+                res.innerHTML = `<h1>${multiplicacao}</h1>`
+            }else if(opcao[3].checked){
+                let divisao = valor1 / valor2 / valor3
+                res.innerHTML = `<h1>${divisao}</h1>`
+            }
         }
 
         function entrou(){

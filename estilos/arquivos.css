@@ -19,16 +19,34 @@ a.voltar{
 }
 
 label{
+    width: 80px;
     text-shadow: 0px 0px 10px yellow;
     margin-left: 100px;
 
 }
 
+label.radio{
+    display: inline-block;
+    margin-left: 5px;
+    text-transform: uppercase;
+    padding: 3px;
+}
+
+div.opcao{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    width: 140px;
+}
+
 input[type='number']{
-    width: 80px;
+    width: 40px;
     margin: 5px 2px;
+    padding: 10px;
     border: 3px solid lightskyblue;
     background-color: white;
+
+    text-align: center;
 }
 
 input[type='button']{
@@ -36,22 +54,32 @@ input[type='button']{
     margin: auto;
     font-size: 1.3em;
     margin-top: 15px;
+    padding: 10px;
+}
+
+input[type='radio']{
+    font-size: 1.2em;
 }
 
 div#res{
     background-color: white;
     display: block;
     margin: auto;
-    width: 260px;
+    width: 220px;
     margin-top: 15px;
+    padding: 20px;
 
     text-align: justify;
-    color: black;
     font-size: 1.2em;
+
+    color: black;
     border: 3px solid lightskyblue;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px white;
+}
 
-    padding: 20px;
+div#res > h1{
+    text-align: center;
 }
 
 div#area {
@@ -59,13 +87,18 @@ div#area {
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 100px;
-    height: 100px;
+    width: 180px;
+    height: 80px;
+
+    font-size: 1.2em;
     text-align: center;
     line-height: 80px;
-    border: 3px solid white;
-
+    text-transform: uppercase;
+    
+    border: 5px solid white;
+    border-radius: 12px;
     background-color: green;
+    color: white;
 }
 
 section.texto > p.comando{
@@ -111,4 +144,6 @@ div#clicar{
     color: white;
     border: 4px solid white;
     border-radius: 10px;
+
+    cursor: pointer;
 }

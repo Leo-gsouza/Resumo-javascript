@@ -58,6 +58,10 @@ script
         /* POR ID » Id criado na TAG */
         var indentificador = window.document.getElementById('clicar')
         indentificador.addEventListener('mouseenter', entrou)
+        indentificador.addEventListener('mouseout', saiu)
+        indentificador.addEventListener('mousedown', segurar)
+        indentificador.addEventListener('mouseup', soltar)
+        indentificador.addEventListener('mousemove', mover)
         /* Por querySelector */
         var selector = window.document.querySelector('h2#select')
         selector.style.color = 'darkslategray'
@@ -65,7 +69,29 @@ script
         function entrou(){
             indentificador.style.background = 'darkred'
             indentificador.style.fontSize = '1.1em'
+            indentificador.style.border = '5px solid white'
         }
+
+        function saiu(){
+            indentificador.style.background = 'darkgoldenrod'
+            indentificador.style.fontSize = '1em'
+        }
+
+        function segurar(){
+            indentificador.style.background = 'green'
+            indentificador.style.fontSize = '0.9em'
+        }
+
+        function soltar(){
+            indentificador.style.background = 'blue'
+            indentificador.style.fontSize = '1em'
+        }
+
+        function mover(){
+            indentificador.style.background = 'purple'
+            indentificador.style.fontSize = '1.1em'
+        }
+
 
     </script>
     

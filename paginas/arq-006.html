@@ -8,7 +8,7 @@
     <title>Arquivo 06</title>
 </head>
 <body>
-    <p class="botao"><a href="../modulos/modulo-c.html">Voltar</a></p>
+    <a href="../modulos/modulo-c.html" class="voltar">Voltar</a>
     <section class="texto">
         <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()">
             Interaja....
@@ -55,10 +55,12 @@
         }
 
         function entrar(){
+            area.style.background = 'blue'
             area.innerText = 'Entrou!'
         }
 
         function saiu(){
+            area.style.background = 'green'
             area.innerText = 'Saiu!'
         }
     </script>
