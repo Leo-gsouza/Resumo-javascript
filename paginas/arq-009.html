@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/arquivos.css">
+    <title>Arquivo 09</title>
+</head>
+<body>
+    <a href="../modulos/modulo-f.html" class="voltar">Voltar</a>
+    <section class="texto">
+     <h1>Concessonaria</h1>
+     <label for="imodelo">Carro: </label>
+     <input type="text" name="modelo" id="imodelo"><br>
+     <input type="button" value="🔎 Buscar" onclick="buscar()">
+     <div id="res">Resultado</div>
+
+    </section>
+<!--------------------------------------------- SCRIPT ------------------------------------------------>
+
+    <script>
+        function buscar(){
+            var modeloTx = document.getElementById('imodelo')
+            var modelo = String(modeloTx.value.toLowerCase())
+            var veiculos = ['uno','etios','gol','polo','mobi']
+            var qtdd = veiculos.length
+            var resultado = document.getElementById('res')
+            var carro = ''
+            var encontrado = ''
+
+        
+            for(contador = 0; contador < qtdd; contador++){
+                if( modelo == veiculos[contador]){
+                    carro = veiculos[contador]
+                    encontrado = true
+                    break
+                }else{
+                    carro = ''
+                    encontrado = false
+                } 
+
+            }if(encontrado){
+                resultado.innerHTML = `<p>Temos o veiculo ${carro} em nossa loja</p>`
+            }else{resultado.innerHTML = `<h1>${modelo.toUpperCase()}</h1><p>Não encontrado</p>`}
+
+        }
+
+    </script>
+    
+</body>
+</html>

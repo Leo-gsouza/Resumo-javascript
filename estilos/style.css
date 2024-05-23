@@ -121,11 +121,12 @@ menu > ul > li > a{
 }
 
 menu > ul > li:hover{
-    background-color: var(--cor3);
+    background-color: white;
 }
 
 menu > ul > li > a:hover{
-    color: white;
+    color: var(--cor3);
+    font-weight: bold;
 }
 
 /*==============================================BODY===============================================*/
@@ -235,4 +236,18 @@ section > p > a{
     color: var(--cor3);
     font-weight: bold;
     font-size: 1.3em;
+}
+
+pre{
+    border: 2px solid darkslategray;
+    overflow: scroll;
+
+    padding: 8px;
+}
+
+/*==============================================DESTAQUES==============================================*/
+
+strong.com{
+    background-color: yellow;
+    padding: 1px;
 }

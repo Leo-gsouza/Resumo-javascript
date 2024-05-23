@@ -34,7 +34,32 @@
     <p class="botao" onclick="visivel_01()">Aula15</p>
         <section class="texto" id="um">
             <h2>Variaveis compostas</h2>
-            
+            <p>Variaveis compostas devem ser capazes de armazenar varios valores em uma mesma estrutura</p>
+            <p>pelo que entendi variaveis compostas são listas. Exemplo: automoveis = [palio, gol, uno, corsa, etios]. Observação: A lista sempre se inicia no indice 0. palio[0] gol[1] e assim por diante </p>
+            <img src="../jpeg/modulo-f-1.jpg" alt="variavel composta">
+            <p><strong>Acrescentar um novo elemento na lista usando indice</strong> » <strong class="com">automoveis[5] = corsa</strong>.</p>
+            <p>A lista vai ficar assim: automoveis[palio, gol, uno, corsa, etios, corsa]</p>
+            <p><strong>Acrescentar um novo elemento no fim da lista(away)</strong> » <strong class="com">automoveis.push('Up')</strong>.Neste caso o Up será adicionado no fim da lista </p>
+            <p><strong>Saber o comprimento da lista(away)</strong> » <strong class="com">automoveis.length</strong> .observação: Note o que o length não tem parenteses, pois ele não é um metodo e sim um atributo</p>
+            <p><strong>Para organizar os elementos dentro da lista em ordem cresente</strong> » <strong class="com">automoveis.sort()</strong> </p>
+            <p>duas maneiras de mostrar cada elemento dentro de uma lista(away)</p>
+            <p>1ª Usando  <strong class="com">for</strong>.</p>
+            <pre>
+                <code>
+for(contador = 0; contador < qtdd; contador++){
+    console.log(`${contador+1}º » ${automoveis[contador]}`)}
+                </code>
+            </pre>
+            <p>2ª Usando o <strong class="com">for in</strong>. observação: muito mais pratica</p>
+            <pre>
+                <code>
+for(contador in automoveis){
+    console.log(`${contador}º » ${automoveis[contador]}`)}
+                </code>
+            </pre>
+            <p>Encontrar posição de um elemento dentro da lista » <strong class="com">automoveis.indexOf('uno')</strong>. Vai mostrar a posição(chave) que se encontra o elemento 'uno'. Caso não seja encontrado o valor dentro da lista ele vai retornar -1</p>
+
+            <p>Link de um arquivo » <a href="../paginas/arq-009.html">Arquivo 09</a></p>
         </section>
 
         <!---------------------------------------Aula 16----------------------------------------------->
