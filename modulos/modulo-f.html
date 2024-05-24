@@ -11,8 +11,8 @@
 <body>
     <header>
         <h1>Curso de JavaScript</h1>
+        <i class="material-symbols-outlined" id="list" onclick="clickMenu()">list</i>
     </header>
-    <i class="material-symbols-outlined" id="list" onclick="clickMenu()">list</i>
     <menu id="itens">
         <ul type="none">
             <li><a href="../index.html">Inicio</a></li>
@@ -65,7 +65,33 @@ for(contador in automoveis){
         <!---------------------------------------Aula 16----------------------------------------------->
         <p class="botao" onclick="visivel_02()">Aula 16 </p>
         <section class="texto" id="dois">
-          
+            <h1>Funções</h1>
+            <p>funções são coisas que fazemos no dia a dia. Exemplo: Sua mãe te da a função de ir comprar leite no mercado. Para concluir essa função você vai prcisar: <br>1 colocar uma roupa adequada. <br>2 ir até o mercado. <br>3 procurar o leite. <br>4 pagar pelo leite. <br>5 voltar para casa</p>
+            <p>Toda função tem uma chamada, que no caso acima foi a <strong class="com">chamada</strong> da mãe dizendo: comprar(dinheiro, leite). Dentro da função tem dois <strong class="com">parametros</strong> que são: Leite e o dinheiro para compra-lo</p>
+            <p>Para conseguir realizar a função tem a <strong class="com">ações</strong>, que no caso seria o passo a passo para comprar o leite</p>
+            <p>Temos o <strong class="com">retorno</strong> que no caso seria o resultado desejado da função, ou seja, a mãe recebendo o leite</p>
+            <pre>
+                <code>
+função comprar(parametro1, parametro2){
+    pegar o dinheiro
+    colocar uma roupa
+    ir ate o mercado
+    procurar o leite
+    encontrou o parametro2? true
+    tem dinheiro para o parametro2? true
+    pagar pelo parametro2 com o parametro1
+    retonar para casa
+    entregar o parametro2 para mãe
+
+    retorno = parametro1 comprado e entregue
+
+    Agora a mãe do garoto vai fazer a chamada da função
+    comprar(dinheiro, leite)
+}
+                </code>
+            </pre>
+            <p>No exemplo acima a cghama inseriu no <strong class="com">parametro 1 = dinheiro</strong> e no <strong class="com">parametro 2 = leite.</strong> O retorno será Leite comprado e entregue </p>
+            <img src="../jpeg/modulo-f-2.JPG" alt="funções">
         </section>
 
         <!---------------------------------------Aula 17----------------------------------------------->

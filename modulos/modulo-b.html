@@ -33,8 +33,8 @@
     <main>
         <h1>Módulo B</h1>
         <!---------------------------------------------AULA05---------------------------------------------->
-        <p class="botao" onclick="visivel5()">Aula 05</p>
-        <section class="texto" id="aula05">
+        <p class="botao" onclick="visivel_01()">Aula 05</p>
+        <section class="texto" id="um">
             <h2>Tipos de dados e variáveis</h2>
             <p>Cometarios: Os comentarios podem ser simbolizados por:</p>
             <ul type="none">
@@ -72,8 +72,8 @@
             <p>Usando o <strong>typeof</strong> você sabe o tipo da variavel</p>
         </section>
         <!---------------------------------------------AULA06---------------------------------------------->
-        <p class="botao" onclick="visivel6()">Aula06</p>
-        <section class="texto" id="aula06">
+        <p class="botao" onclick="visivel_02()">Aula06</p>
+        <section class="texto" id="dois">
             <h2>window.prompt</h2>
             <p>Será criado interação com a informação digitada na caixa do window.prompt</p>
             <p>Acessar o <a href="../paginas/arq-002.html">Arquivo 002</a></p>
@@ -89,19 +89,19 @@
             <p>Acessar o <a href="../paginas/arq-004.html">arquivo 004</a></p>
             <p>No arquivo foi ensinado:</p>
             <ul type="none">
-                <li>Formatações de string » s.toleght, s.toUpperCase(), s.toLowerCase()</li>
-                <li>Comando document.write para exibir na pçagina um resultado de uma interação</li>
+                <li>Formatações de string » <strong class="com">s.toleght, s.toUpperCase(), s.toLowerCase()</strong></li>
+                <li>Comando <strong class="com">document.write</strong> para exibir na pagina um resultado de uma interação</li>
                 <li>Dentro do document.write pode se usar TAGS do HTML. (`«h1» blabalbla`«/h1»)</li>
-                <li>Usar o writeln ou br dentro do parenteses para quebrar a linha</li>
-                <li>Comando variavel.toFixed(2) » duas casas depois do ponto</li>
-                <li>Comando variavel.toFixed(2).replace('.' , ',') Vai trocar o ponto pela virgula</li>
-                <li><strong>Formatação em moeda » n1.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})</strong></li>
+                <li>Usar o <strong class="com">writeln</strong> ou br dentro do parenteses para quebrar a linha</li>
+                <li>Comando <strong class="com">variavel.toFixed(2)</strong> » duas casas depois do ponto</li>
+                <li>Comando variavel.toFixed(2)<strong class="com">.replace('.' , ',')</strong> Vai trocar o ponto pela virgula</li>
+                <li>Formatação em moeda » n1.<strong class="com">toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})</strong></li>
             </ul>
         </section>
         
         <!---------------------------------------Aula 07----------------------------------------------->
-        <p class="botao" onclick="visivel7()">Aula 07</p>
-        <section class="texto" id="aula07">
+        <p class="botao" onclick="visivel_03()">Aula 07</p>
+        <section class="texto" id="tres">
             <h2>Operadores aritimeticos</h2>
             <img src="../jpeg/modulo-b-2.JPG" alt="Aritimético">
             <p>Respeita a ordem de precedência</p>
@@ -119,9 +119,9 @@
             <p>X = 1 (1)<br> X+= 1 (2) <br> X++ (3) <br> X-- (2)</p>
             <p>Existe o pós e pré incremento. Em um o sinal vem depois da variavel (X++) e no vem antes (++X) </p>
         </section>
-         <!---------------------------------------Aula 08----------------------------------------------->
-            <p class="botao" onclick="visivel8()">Aula 08</p>
-            <section class="texto" id="aula08">
+         <!---------------------------------------Aula08----------------------------------------------->
+            <p class="botao" onclick="visivel_04()">Aula 08</p>
+            <section class="texto" id="quatro">
                 <h2>Operadores relacionais</h2>
                 <ul type="none">
                     <li> > Maior</li>
@@ -154,36 +154,7 @@
     </main>
 
     <!--------------------------------------------------Script------------------------------------>
-    <script>
-        function clickMenu(){
-            if (itens.style.display == 'block'){
-                itens.style.display = 'none'}
-            else{itens.style.display = 'block'}
-        }
-
-        function  visivel5(){
-            if (aula05.style.display == 'block'){
-                aula05.style.display = 'none'}
-            else{aula05.style.display = 'block'}
-        }
-
-        function visivel6(){
-            if (aula06.style.display == 'block'){
-                aula06.style.display = 'none'}
-            else{aula06.style.display = 'block'}
-        }
-
-        function visivel7(){
-            if (aula07.style.display == 'block'){
-                aula07.style.display ='none'}
-            else{aula07.style.display ='block'}
-        }
-
-        function visivel8(){
-            if (aula08.style.display == 'block'){
-                aula08.style.display ='none'}
-            else{aula08.style.display ='block'}
-        }
-    </script>
+   
+    <script src="../scripts/modulo-e.js"></script>
 </body>
 </html>

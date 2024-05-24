@@ -44,8 +44,11 @@ header{
 }
 
 header > h1{
+    width: 215px;
     position: absolute;
-    left: 70px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     display: inline-block;
     color: aliceblue;
     text-align: right;

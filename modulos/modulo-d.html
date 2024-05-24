@@ -30,8 +30,8 @@
     
     <main>
     <h1>Módulo D</h1>
-    <p class="botao" onclick="visivel11()">Aula11</p>
-        <section class="texto" id="aula11">
+    <p class="botao" onclick="visivel_01()">Aula11</p>
+        <section class="texto" id="um">
             <h2>Condições</h2>
             <img src="../jpeg/modulo-d-1.JPG" alt="condição">
             <p>1º Arquivo em JS usando o VSCODE » <a href="../javascript/001.js">001.js</a></p>
@@ -42,8 +42,8 @@
 
         </section>
         <!---------------------------------------Aula 12----------------------------------------------->
-        <p class="botao" onclick="visivel12()">Aula 12 </p>
-        <section class="texto" id="aula12">
+        <p class="botao" onclick="visivel_02()">Aula 12 </p>
+        <section class="texto" id="dois">
             <h2>Condição Aninhadas</h2>
             <img src="../jpeg/modulo-d-3.JPG" alt="codição aninhada">
             <h2>condição Multipla</h2>
@@ -52,8 +52,8 @@
             <p>Comandos ensinados nessa aula</p>
             <ol>
                 <li>If, Else if e Else</li>
-                <li>Hora atual » variavel01 = <strong class="com">new Date()</strong> / variavel02 = variavel01.<strong class="com">getHours()</strong></li>
-                <li>Dia da semana » variavel01 = <strong class="com">new Date()</strong> / variavel02 = variavel01.<strong class="com">getDay()</strong></li>
+                <li>Hora atual » variavel01 = <strong class="com">new Date()</strong>  <br>variavel02 = variavel01.<strong class="com">getHours()</strong></li>
+                <li>Dia da semana » variavel01 = <strong class="com">new Date()</strong> <br>variavel02 = variavel01.<strong class="com">getDay()</strong></li>
             </ol>
             <p>O comando <strong class="com">getDay</strong> vai retornar um número para o dia da semana, exemplo: Domingo(0), Segunda(1) e por ai em diante</p>
             <p>observação: Sempre utilizar o <strong class="com">break</strong> abaixo de todos os casos para quebrar o codigo assi que o caso for encontrado</p>
@@ -63,25 +63,7 @@
 
     <!---------------------------------------  SCRIPT  ----------------------------------------------->
     
-    <script>
-        function clickMenu(){
-            if (itens.style.display == 'block'){
-                itens.style.display = 'none'}
-            else{itens.style.display = 'block'}
-        }
-
-        function visivel11(){
-            if (aula11.style.display == 'block'){
-                aula11.style.display = 'none'}
-            else{aula11.style.display ='block'}
-        }
-
-        function visivel12(){
-            if (aula12.style.display == 'block'){
-                aula12.style.display = 'none'}
-            else (aula12.style.display = 'block')
-        }
-    </script>
+    <script src="../scripts/modulo-e.js"></script>
 
 
 </body>
