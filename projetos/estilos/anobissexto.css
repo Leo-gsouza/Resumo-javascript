@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    text-align: center;
+    margin: 30px 5px ;
+}
+
+header > h1{
+    color: white;
+    margin-top: 80px;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-family: fantasy;
+    font-weight: normal;
+    text-shadow: 0px 0px 8px black;
+}
+
+body{
+    background: url('../imagens/mundo.jpg') top center no-repeat fixed;
+    background-size: cover;
+}
+
+section {
+    display: block;
+    margin: auto;
+    width: 310px;
+
+    background-color: lightgoldenrodyellow;
+    color: black;
+    border: 3px solid darkslategrey;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px white;
+
+    padding: 14px;
+}
+
+div#voltar > a{
+    display: block;
+    margin: auto;
+    margin-bottom: 12px;
+    width: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+
+    background-color: lightskyblue;
+    border: 2px solid white;
+    border-radius: 7px;
+    color:  darkblue;
+    box-shadow: 0px 0px 10px white;
+
+
+
+}
+
+label{
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 15px 5px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+input[type='number']{
+    font-size: 1.5em;
+    text-align: center;
+    width: 80px;
+    padding: 10px 5px;
+    margin-top: 20px;
+}
+
+input[type='radio']{
+    margin: 5px;
+    background-color: 
+}
+
+input[type='button']{
+    display: block;
+    width: 120px;
+    height: 40px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    border: 1px solid darkorchid;
+    background-color: lightpink;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
+
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+div#res{
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-family: monospace;
+}
+
+div#res > h2{
+    font-size: 1.2em;
+}
+
+div#foto{
+    display: none;
+} 
+
+img#imagem{
+    display: block;
+    margin: auto;
+    width: 220px;
+    margin-top: 10px;
+
+    box-shadow: 0px 0px 20px white;
+    border-radius: 50%;
+}

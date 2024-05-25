@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/anobissexto.css">
+    <title>Ano Bissexto</title>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Ano Bissexto</h1>
+    </header>
+    <section id="caixa">
+        <div id="voltar"><a href="../index.html">Voltar</a></div>
+        <div>
+            <label for="inascimento">Ano:</label>
+            <input type="number" name="ano" id="iano" min="0" max="4" placeholder="0000"><br>
+        </div>
+        <input type="button" value="Verificar" id="botao" onclick="verificar()">
+        <div id="res">
+            "O mundo é maravilhoso e as pessoas um lixo" 
+        </div>
+        <div id="foto">
+            <img src="../imagens/branco.JPG" alt="imagem branca" id="imagem">
+        </div>
+    </section>
+
+    <script src="../scripts/anobisexto.js"></script>
+</body>
+</html>
